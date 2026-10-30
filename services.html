@@ -60,7 +60,9 @@
       --serif: 'Playfair Display', Georgia, serif;
     }
 
-    *, *::before, *::after {
+    *,
+    *::before,
+    *::after {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
@@ -97,7 +99,10 @@
       height: auto;
     }
 
-    button, input, select, textarea {
+    button,
+    input,
+    select,
+    textarea {
       font: inherit;
     }
 
@@ -114,7 +119,11 @@
       margin-inline: auto;
     }
 
-    h1, h2, h3, h4, h5 {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
       font-family: var(--display);
       line-height: 1.2;
       letter-spacing: -0.035em;
@@ -301,8 +310,8 @@
     }
 
     .nav-link:hover,
-    .nav-item.active > .nav-link,
-    .nav-item.is-open > .nav-link {
+    .nav-item.active>.nav-link,
+    .nav-item.is-open>.nav-link {
       color: var(--green);
       background: var(--mint);
     }
@@ -371,16 +380,18 @@
     .dropdown-menu::-webkit-scrollbar {
       width: 5px;
     }
+
     .dropdown-menu::-webkit-scrollbar-track {
       background: #f1f5f2;
       border-radius: 10px;
     }
+
     .dropdown-menu::-webkit-scrollbar-thumb {
       background: #c3d4c7;
       border-radius: 10px;
     }
 
-    .nav-item.is-open > .dropdown-menu {
+    .nav-item.is-open>.dropdown-menu {
       opacity: 1;
       visibility: visible;
       transform: translateY(0);
@@ -462,16 +473,18 @@
     .mega-menu::-webkit-scrollbar {
       width: 6px;
     }
+
     .mega-menu::-webkit-scrollbar-track {
       background: #f1f5f2;
       border-radius: 10px;
     }
+
     .mega-menu::-webkit-scrollbar-thumb {
       background: #b5c7ba;
       border-radius: 10px;
     }
 
-    .nav-item.is-open > .mega-menu {
+    .nav-item.is-open>.mega-menu {
       opacity: 1;
       visibility: visible;
       transform: translate(-50%, 0);
@@ -601,15 +614,20 @@
       position: absolute;
       inset: 0;
       background: linear-gradient(90deg, rgba(7, 26, 19, 0.92) 0%, rgba(7, 26, 19, 0.68) 55%, rgba(7, 26, 19, 0.3) 100%),
-                  url('assets/imgs/landscape-cranes-bg-image.jpg') center 40%/cover no-repeat;
+        url('assets/imgs/big-ship-dublin.jpg') center 40%/cover no-repeat;
       z-index: -1;
       transform: scale(1.02);
       animation: heroBackgroundZoom 20s ease-out infinite alternate;
     }
 
     @keyframes heroBackgroundZoom {
-      0% { transform: scale(1.01); }
-      100% { transform: scale(1.06); }
+      0% {
+        transform: scale(1.01);
+      }
+
+      100% {
+        transform: scale(1.06);
+      }
     }
 
     .hero-copy {
@@ -720,6 +738,7 @@
         opacity: 0;
         transform: translateY(30px);
       }
+
       to {
         opacity: 1;
         transform: translateY(0);
@@ -1249,7 +1268,7 @@
       line-height: 1.7;
     }
 
-    .footer-contact-list li > i {
+    .footer-contact-list li>i {
       margin-top: 5px;
       width: 18px;
       flex-shrink: 0;
@@ -1315,9 +1334,17 @@
     }
 
     @keyframes pulseWhatsApp {
-      0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
-      70% { box-shadow: 0 0 0 9px rgba(37, 211, 102, 0); }
-      100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+      0% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+      }
+
+      70% {
+        box-shadow: 0 0 0 9px rgba(37, 211, 102, 0);
+      }
+
+      100% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+      }
     }
 
     .hero-whatsapp-icon svg {
@@ -1402,8 +1429,15 @@
     }
 
     @keyframes floatBreath {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-7px); }
+
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-7px);
+      }
     }
 
     .whatsapp-float:hover {
@@ -1427,12 +1461,16 @@
     }
 
     @media (prefers-reduced-motion: reduce) {
-      *, *::before, *::after {
+
+      *,
+      *::before,
+      *::after {
         scroll-behavior: auto !important;
         animation-duration: 0.01ms !important;
         animation-iteration-count: 1 !important;
         transition-duration: 0.01ms !important;
       }
+
       .reveal {
         opacity: 1;
         transform: none;
@@ -1443,24 +1481,61 @@
        RESPONSIVE BREAKPOINTS
     ========================================= */
     @media (max-width: 1100px) {
-      .primary-nav { gap: 14px; }
-      .nav-link { padding: 10px 10px; }
-      .ireland-network-grid { grid-template-columns: 1fr; gap: 40px; }
-      .ireland-intro-box { position: static; }
+      .primary-nav {
+        gap: 14px;
+      }
+
+      .nav-link {
+        padding: 10px 10px;
+      }
+
+      .ireland-network-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .ireland-intro-box {
+        position: static;
+      }
+
       .service-block-inner,
       .service-block:nth-child(even) .service-block-inner {
         grid-template-columns: 1fr;
       }
-      .service-block:nth-child(even) .sb-media { order: 1; }
-      .service-block:nth-child(even) .sb-content { order: 2; }
-      .sb-media { min-height: 320px; }
-      .footer-top { grid-template-columns: 1.2fr 1fr; gap: 40px; }
-      .footer-contact { grid-column: 1 / -1; }
+
+      .service-block:nth-child(even) .sb-media {
+        order: 1;
+      }
+
+      .service-block:nth-child(even) .sb-content {
+        order: 2;
+      }
+
+      .sb-media {
+        min-height: 320px;
+      }
+
+      .footer-top {
+        grid-template-columns: 1.2fr 1fr;
+        gap: 40px;
+      }
+
+      .footer-contact {
+        grid-column: 1 / -1;
+      }
     }
 
     @media (max-width: 900px) {
-      .header-inner { height: 76px; }
-      .nav-toggle { display: flex; position: relative; z-index: 1004; }
+      .header-inner {
+        height: 76px;
+      }
+
+      .nav-toggle {
+        display: flex;
+        position: relative;
+        z-index: 1004;
+      }
+
       .primary-nav {
         position: fixed;
         top: 0;
@@ -1477,14 +1552,45 @@
         box-shadow: -20px 0 60px rgba(14, 45, 27, 0.15);
         z-index: 1003;
       }
-      .primary-nav.open { transform: translateX(0); }
-      .nav-list { display: flex; flex-direction: column; align-items: stretch; gap: 0; }
-      .nav-item { width: 100%; border-bottom: 1px solid var(--line); }
-      .nav-link { width: 100%; justify-content: space-between; padding: 18px 4px; font-size: 1.05rem; border-radius: 0; background: transparent !important; }
-      .nav-link:hover, .nav-item.active > .nav-link, .nav-item.is-open > .nav-link { color: var(--green); }
-      .primary-nav > .btn { width: 100%; margin-top: 28px; }
 
-      .dropdown-menu, .mega-menu {
+      .primary-nav.open {
+        transform: translateX(0);
+      }
+
+      .nav-list {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+      }
+
+      .nav-item {
+        width: 100%;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .nav-link {
+        width: 100%;
+        justify-content: space-between;
+        padding: 18px 4px;
+        font-size: 1.05rem;
+        border-radius: 0;
+        background: transparent !important;
+      }
+
+      .nav-link:hover,
+      .nav-item.active>.nav-link,
+      .nav-item.is-open>.nav-link {
+        color: var(--green);
+      }
+
+      .primary-nav>.btn {
+        width: 100%;
+        margin-top: 28px;
+      }
+
+      .dropdown-menu,
+      .mega-menu {
         position: static !important;
         left: auto !important;
         top: auto !important;
@@ -1503,43 +1609,120 @@
         background: #f7faf7 !important;
       }
 
-      .nav-item.is-open > .dropdown-menu {
+      .nav-item.is-open>.dropdown-menu {
         max-height: 600px !important;
         padding: 10px 10px 16px !important;
       }
 
-      .nav-item.is-open > .mega-menu {
+      .nav-item.is-open>.mega-menu {
         max-height: 700px !important;
         overflow-y: auto !important;
         padding: 14px 10px 20px !important;
       }
 
-      .mega-header { display: block; padding-bottom: 14px; margin-bottom: 14px; }
-      .mega-header-title { margin-bottom: 14px; }
-      .mega-search { width: 100%; }
-      .mega-search input { width: 100%; }
-      .mega-grid { grid-template-columns: 1fr; gap: 16px; }
+      .mega-header {
+        display: block;
+        padding-bottom: 14px;
+        margin-bottom: 14px;
+      }
 
-      .hero { min-height: 500px; padding: 135px 0 85px; }
-      .ports-cards-grid { grid-template-columns: 1fr; }
-      .sb-content { padding: 36px 28px; }
-      .sb-number { font-size: 2.2rem; top: 24px; right: 28px; }
-      .sb-items { grid-template-columns: 1fr; }
+      .mega-header-title {
+        margin-bottom: 14px;
+      }
+
+      .mega-search {
+        width: 100%;
+      }
+
+      .mega-search input {
+        width: 100%;
+      }
+
+      .mega-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+
+      .hero {
+        min-height: 500px;
+        padding: 135px 0 85px;
+      }
+
+      .ports-cards-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .sb-content {
+        padding: 36px 28px;
+      }
+
+      .sb-number {
+        font-size: 2.2rem;
+        top: 24px;
+        right: 28px;
+      }
+
+      .sb-items {
+        grid-template-columns: 1fr;
+      }
     }
 
     @media (max-width: 650px) {
-      .container { width: calc(100% - 36px); }
-      .hero { min-height: 460px; padding: 120px 0 75px; }
-      .hero-title { font-size: clamp(2.8rem, 12vw, 4.2rem); }
-      .ports-accordion-container { padding: 26px 20px; }
-      .sb-content { padding: 30px 20px; }
-      .footer-top { grid-template-columns: 1fr; gap: 36px; padding-bottom: 40px; }
-      .footer-bottom { flex-direction: column; align-items: flex-start; gap: 10px; }
-      .hero-whatsapp-bar { padding: 10px 16px !important; gap: 8px !important; }
-      .hero-whatsapp-icon { width: 26px !important; height: 26px !important; }
-      .hero-whatsapp-icon svg { width: 15px !important; height: 15px !important; }
-      .hero-whatsapp-tag { font-size: 0.78rem !important; }
-      .hero-whatsapp-num { font-size: 0.88rem !important; }
+      .container {
+        width: calc(100% - 36px);
+      }
+
+      .hero {
+        min-height: 460px;
+        padding: 120px 0 75px;
+      }
+
+      .hero-title {
+        font-size: clamp(2.8rem, 12vw, 4.2rem);
+      }
+
+      .ports-accordion-container {
+        padding: 26px 20px;
+      }
+
+      .sb-content {
+        padding: 30px 20px;
+      }
+
+      .footer-top {
+        grid-template-columns: 1fr;
+        gap: 36px;
+        padding-bottom: 40px;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+
+      .hero-whatsapp-bar {
+        padding: 10px 16px !important;
+        gap: 8px !important;
+      }
+
+      .hero-whatsapp-icon {
+        width: 26px !important;
+        height: 26px !important;
+      }
+
+      .hero-whatsapp-icon svg {
+        width: 15px !important;
+        height: 15px !important;
+      }
+
+      .hero-whatsapp-tag {
+        font-size: 0.78rem !important;
+      }
+
+      .hero-whatsapp-num {
+        font-size: 0.88rem !important;
+      }
     }
   </style>
 </head>
@@ -1559,7 +1742,8 @@
         </span>
       </a>
 
-      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-controls="primary-nav" aria-expanded="false">
+      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-controls="primary-nav"
+        aria-expanded="false">
         <i class="fa-solid fa-bars"></i>
       </button>
 
@@ -1639,7 +1823,9 @@
           <span class="hero-eyebrow">Complete Vessel Procurement &amp; Logistics</span>
           <h1 class="hero-title">Ship Supply <em>Services</em> in Ireland</h1>
           <p class="hero-desc">
-            Explore our comprehensive range of certified marine chandlery supplies, from fresh galley provisions and bonded goods to heavy deck and engine-room technical spares, delivered directly to berths and anchorages across Ireland.
+            Explore our comprehensive range of certified marine chandlery supplies, from fresh galley provisions and
+            bonded goods to heavy deck and engine-room technical spares, delivered directly to berths and anchorages
+            across Ireland.
           </p>
         </div>
       </div>
@@ -1664,18 +1850,25 @@
           <span class="eyebrow">Strategic Maritime Territory</span>
           <h2>Serving Ireland's <span>Key Commercial Ports</span></h2>
           <p>
-            Ireland is a sovereign island nation situated in north-western Europe, commanding a pivotal gateway position along major North Atlantic trade routes connecting Europe and the Americas.
+            Ireland is a sovereign island nation situated in north-western Europe, commanding a pivotal gateway position
+            along major North Atlantic trade routes connecting Europe and the Americas.
           </p>
           <p>
-            Renowned globally for its deep-water natural harbours, pristine agricultural exports, and vibrant maritime heritage, Ireland handles over 90% of its international merchandise trade by sea through dedicated commercial port facilities.
+            Renowned globally for its deep-water natural harbours, pristine agricultural exports, and vibrant maritime
+            heritage, Ireland handles over 90% of its international merchandise trade by sea through dedicated
+            commercial port facilities.
           </p>
           <p>
-            Ship Chandler Ireland arranges vessel supply, fresh provisions, duty-free stores, and technical marine equipment to all commercial ports, coastal terminals, and designated offshore anchorages throughout the island.
+            Ship Chandler Ireland arranges vessel supply, fresh provisions, duty-free stores, and technical marine
+            equipment to all commercial ports, coastal terminals, and designated offshore anchorages throughout the
+            island.
           </p>
 
           <div class="ireland-intro-highlight">
             <p>
-              <i class="fa-solid fa-anchor"></i> <strong>Extensive Coverage:</strong> The ports highlighted here represent our primary dispatch hubs; however, our mobile logistics network can coordinate supply to any commercial berth, fishing port, or anchorage around the Irish coastline upon request.
+              <i class="fa-solid fa-anchor"></i> <strong>Extensive Coverage:</strong> The ports highlighted here
+              represent our primary dispatch hubs; however, our mobile logistics network can coordinate supply to any
+              commercial berth, fishing port, or anchorage around the Irish coastline upon request.
             </p>
           </div>
 
@@ -1698,7 +1891,8 @@
                 <div class="port-card-icon"><i class="fa-solid fa-anchor"></i></div>
                 <h4>Dublin</h4>
               </div>
-              <p>Ireland's premier commercial harbour, handling the vast majority of container, Ro-Ro, bulk cargo, and passenger traffic.</p>
+              <p>Ireland's premier commercial harbour, handling the vast majority of container, Ro-Ro, bulk cargo, and
+                passenger traffic.</p>
             </div>
 
             <!-- Port 2: Cork (Initially Visible) -->
@@ -1707,7 +1901,8 @@
                 <div class="port-card-icon"><i class="fa-solid fa-ship"></i></div>
                 <h4>Cork</h4>
               </div>
-              <p>One of the world's finest natural deep-water harbours, serving container terminals, pharmaceutical hubs, and oil refineries.</p>
+              <p>One of the world's finest natural deep-water harbours, serving container terminals, pharmaceutical
+                hubs, and oil refineries.</p>
             </div>
 
             <!-- Port 3: Shannon Foynes (Initially Visible) -->
@@ -1716,7 +1911,8 @@
                 <div class="port-card-icon"><i class="fa-solid fa-water"></i></div>
                 <h4>Shannon Foynes</h4>
               </div>
-              <p>Ireland's largest bulk cargo deep-water port estuary, accommodating Capesize and Panamax merchant vessels.</p>
+              <p>Ireland's largest bulk cargo deep-water port estuary, accommodating Capesize and Panamax merchant
+                vessels.</p>
             </div>
 
             <!-- Port 4: Waterford (Initially Visible) -->
@@ -1725,7 +1921,8 @@
                 <div class="port-card-icon"><i class="fa-solid fa-boxes-stacked"></i></div>
                 <h4>Waterford</h4>
               </div>
-              <p>Key south-eastern freight hub with dedicated Lo-Lo container facilities, bulk agricultural terminals, and multimodal rail links.</p>
+              <p>Key south-eastern freight hub with dedicated Lo-Lo container facilities, bulk agricultural terminals,
+                and multimodal rail links.</p>
             </div>
 
             <!-- Port 5: Rosslare (Initially Visible) -->
@@ -1734,7 +1931,8 @@
                 <div class="port-card-icon"><i class="fa-solid fa-truck"></i></div>
                 <h4>Rosslare</h4>
               </div>
-              <p>Strategic gateway for direct continental European freight, Ro-Ro ferry routes, and expanding offshore wind marine support.</p>
+              <p>Strategic gateway for direct continental European freight, Ro-Ro ferry routes, and expanding offshore
+                wind marine support.</p>
             </div>
 
             <!-- Port 6: Drogheda (Initially Visible) -->
@@ -1743,7 +1941,8 @@
                 <div class="port-card-icon"><i class="fa-solid fa-box"></i></div>
                 <h4>Drogheda</h4>
               </div>
-              <p>Busy commercial river terminal on the east coast, handling short-sea bulk commodities, general breakbulk, and tankers.</p>
+              <p>Busy commercial river terminal on the east coast, handling short-sea bulk commodities, general
+                breakbulk, and tankers.</p>
             </div>
 
             <!-- Port 7: Galway (Initially Visible) -->
@@ -1752,7 +1951,8 @@
                 <div class="port-card-icon"><i class="fa-solid fa-compass"></i></div>
                 <h4>Galway</h4>
               </div>
-              <p>The principal commercial port on the western Atlantic seaboard, handling petroleum imports, bulk cargo, and research vessels.</p>
+              <p>The principal commercial port on the western Atlantic seaboard, handling petroleum imports, bulk cargo,
+                and research vessels.</p>
             </div>
 
             <!-- Port 8: Greenore (Initially Collapsed - Revealed on Click) -->
@@ -1761,7 +1961,8 @@
                 <div class="port-card-icon"><i class="fa-solid fa-anchor"></i></div>
                 <h4>Greenore</h4>
               </div>
-              <p>Only privately owned commercial deep-water port on the east coast, located on Carlingford Lough for bulk and project cargo.</p>
+              <p>Only privately owned commercial deep-water port on the east coast, located on Carlingford Lough for
+                bulk and project cargo.</p>
             </div>
 
             <!-- Port 9: Killybegs (Initially Collapsed - Revealed on Click) -->
@@ -1770,7 +1971,8 @@
                 <div class="port-card-icon"><i class="fa-solid fa-snowflake"></i></div>
                 <h4>Killybegs</h4>
               </div>
-              <p>Ireland's leading deep-water pelagic fishing port, servicing international trawlers, reefer carriers, and offshore energy ships.</p>
+              <p>Ireland's leading deep-water pelagic fishing port, servicing international trawlers, reefer carriers,
+                and offshore energy ships.</p>
             </div>
 
             <!-- Port 10: Bantry Bay (Initially Collapsed - Revealed on Click) -->
@@ -1779,7 +1981,8 @@
                 <div class="port-card-icon"><i class="fa-solid fa-oil-can"></i></div>
                 <h4>Bantry Bay</h4>
               </div>
-              <p>Sheltered deep-water anchorage and major crude oil storage terminal at Whiddy Island, accommodating Ultra Large Crude Carriers.</p>
+              <p>Sheltered deep-water anchorage and major crude oil storage terminal at Whiddy Island, accommodating
+                Ultra Large Crude Carriers.</p>
             </div>
 
             <!-- Port 11: Castletownbere (Initially Collapsed - Revealed on Click) -->
@@ -1788,7 +1991,8 @@
                 <div class="port-card-icon"><i class="fa-solid fa-ship"></i></div>
                 <h4>Castletownbere</h4>
               </div>
-              <p>Major south-western Atlantic marine centre, providing all-weather sheltered berthing for ocean-going fishing vessels and tugs.</p>
+              <p>Major south-western Atlantic marine centre, providing all-weather sheltered berthing for ocean-going
+                fishing vessels and tugs.</p>
             </div>
 
             <!-- Port 12: New Ross (Initially Collapsed - Revealed on Click) -->
@@ -1797,7 +2001,8 @@
                 <div class="port-card-icon"><i class="fa-solid fa-boxes-packing"></i></div>
                 <h4>New Ross</h4>
               </div>
-              <p>Inland commercial port on the River Barrow, facilitating trade in animal feed, bulk fertilizers, fuel oil, and heavy equipment.</p>
+              <p>Inland commercial port on the River Barrow, facilitating trade in animal feed, bulk fertilizers, fuel
+                oil, and heavy equipment.</p>
             </div>
 
             <!-- Port 13: Wicklow (Initially Collapsed - Revealed on Click) -->
@@ -1806,7 +2011,8 @@
                 <div class="port-card-icon"><i class="fa-solid fa-location-dot"></i></div>
                 <h4>Wicklow</h4>
               </div>
-              <p>Historic east coast harbour accommodating coastal general cargo ships, timber carriers, scrap exports, and regional workboats.</p>
+              <p>Historic east coast harbour accommodating coastal general cargo ships, timber carriers, scrap exports,
+                and regional workboats.</p>
             </div>
 
             <!-- Port 14: Dundalk (Initially Collapsed - Revealed on Click) -->
@@ -1815,7 +2021,8 @@
                 <div class="port-card-icon"><i class="fa-solid fa-anchor"></i></div>
                 <h4>Dundalk</h4>
               </div>
-              <p>Commercial harbour on the Castletown River in County Louth, supporting regional agricultural bulk and short-sea shipping.</p>
+              <p>Commercial harbour on the Castletown River in County Louth, supporting regional agricultural bulk and
+                short-sea shipping.</p>
             </div>
           </div>
 
@@ -1837,13 +2044,15 @@
     <div class="category-nav-wrap">
       <div class="container">
         <div class="category-nav-scroll" id="cat-nav">
-          <button class="cat-nav-btn active" data-target="provisions"><span class="cat-num">01</span> Provisions</button>
+          <button class="cat-nav-btn active" data-target="provisions"><span class="cat-num">01</span>
+            Provisions</button>
           <button class="cat-nav-btn" data-target="bonded"><span class="cat-num">02</span> Bonded Stores</button>
           <button class="cat-nav-btn" data-target="deck"><span class="cat-num">03</span> Deck Stores</button>
           <button class="cat-nav-btn" data-target="engine"><span class="cat-num">04</span> Engine Stores</button>
           <button class="cat-nav-btn" data-target="cabin"><span class="cat-num">05</span> Cabin &amp; Galley</button>
           <button class="cat-nav-btn" data-target="safety"><span class="cat-num">06</span> Safety &amp; PPE</button>
-          <button class="cat-nav-btn" data-target="electrical"><span class="cat-num">07</span> Electrical Stores</button>
+          <button class="cat-nav-btn" data-target="electrical"><span class="cat-num">07</span> Electrical
+            Stores</button>
           <button class="cat-nav-btn" data-target="chemicals"><span class="cat-num">08</span> Marine Chemicals</button>
           <button class="cat-nav-btn" data-target="welding"><span class="cat-num">09</span> Welding Equipment</button>
           <button class="cat-nav-btn" data-target="spare-parts"><span class="cat-num">10</span> Spare Parts</button>
@@ -1870,8 +2079,16 @@
             </div>
             <div class="sb-content">
               <div class="sb-number">01</div>
-              <h2 class="sb-title">Ship Provisions Supply Ireland Port</h2>
-              <p class="sb-desc">Ship Chandler Ireland supplies fresh, chilled, frozen, and dry provisions to support vessel crews and galley requirements with reliable delivery to berth and anchorage locations across Dublin, Cork, Shannon Foynes, Waterford, Rosslare, Drogheda, Galway, Greenore, Killybegs, Bantry Bay, Castletownbere, New Ross, Wicklow, and Dundalk. Orders can be prepared according to crew nationality, vessel requirements, requested brands, and pack sizes. High-quality food provision supply ensures the crew remains well-fed and operational throughout the voyage. Sourcing reliable ship provisions in Ireland requires careful attention to cold-chain logistics and shelf-life management. Ship Chandler Ireland guarantees that all food stores, including fresh farm produce, meats, and dry goods, meet stringent EU hygiene standards before delivery, minimizing disruption to the vessel's schedule.</p>
+              <h2 class="sb-title">Ship Provisions Supply Ireland</h2>
+              <p class="sb-desc">Ship Chandler Ireland supplies fresh, chilled, frozen, and dry provisions to support
+                vessel crews and galley requirements with reliable delivery to berth and anchorage locations across
+                Dublin, Cork, Shannon Foynes, Waterford, Rosslare, Drogheda, Galway, Greenore, Killybegs, Bantry Bay,
+                Castletownbere, New Ross, Wicklow, and Dundalk. Orders can be prepared according to crew nationality,
+                vessel requirements, requested brands, and pack sizes. High-quality food provision supply ensures the
+                crew remains well-fed and operational throughout the voyage. Sourcing reliable ship provisions in
+                Ireland requires careful attention to cold-chain logistics and shelf-life management. Ship Chandler
+                Ireland guarantees that all food stores, including fresh farm produce, meats, and dry goods, meet
+                stringent EU hygiene standards before delivery, minimizing disruption to the vessel's schedule.</p>
               <div class="sb-items-label"><i class="fas fa-list-check"></i> Available Items</div>
               <div class="sb-items">
                 <span class="sb-item">Fresh fruits and vegetables</span>
@@ -1910,7 +2127,15 @@
             <div class="sb-content">
               <div class="sb-number">02</div>
               <h2 class="sb-title">Bonded Stores Supply</h2>
-              <p class="sb-desc">Ship Chandler Ireland supplies bonded and duty-free provisions in compliance with applicable Revenue customs and Irish port regulations, with direct vessel delivery arranged at Dublin, Cork, Shannon Foynes, Waterford, Rosslare, Drogheda, Galway, Greenore, Killybegs, Bantry Bay, Castletownbere, New Ross, Wicklow, and Dundalk. We coordinate necessary customs clearances, manifests, and delivery permits directly to the vessel. A reliable bond store supply chain ensures crew welfare items and duty-free goods are delivered efficiently and compliantly. Navigating local customs procedures for bonded stores requires experienced coordination. Ship Chandler Ireland manages all documentation to guarantee a smooth transfer of tobacco, confectionery, beverages, and personal care items, allowing the crew to receive essential welfare products without delays during the port call.</p>
+              <p class="sb-desc">Ship Chandler Ireland supplies bonded and duty-free provisions in compliance with
+                applicable Revenue customs and Irish port regulations, with direct vessel delivery arranged at Dublin,
+                Cork, Shannon Foynes, Waterford, Rosslare, Drogheda, Galway, Greenore, Killybegs, Bantry Bay,
+                Castletownbere, New Ross, Wicklow, and Dundalk. We coordinate necessary customs clearances, manifests,
+                and delivery permits directly to the vessel. A reliable bond store supply chain ensures crew welfare
+                items and duty-free goods are delivered efficiently and compliantly. Navigating local customs procedures
+                for bonded stores requires experienced coordination. Ship Chandler Ireland manages all documentation to
+                guarantee a smooth transfer of tobacco, confectionery, beverages, and personal care items, allowing the
+                crew to receive essential welfare products without delays during the port call.</p>
               <div class="sb-items-label"><i class="fas fa-list-check"></i> Available Items</div>
               <div class="sb-items">
                 <span class="sb-item">Tobacco products</span>
@@ -1939,7 +2164,15 @@
             <div class="sb-content">
               <div class="sb-number">03</div>
               <h2 class="sb-title">Deck Stores Supply</h2>
-              <p class="sb-desc">Ship Chandler Ireland sources and supplies a wide range of deck consumables and equipment for vessels calling at Dublin, Cork, Shannon Foynes, Waterford, Rosslare, Drogheda, Galway, Greenore, Killybegs, Bantry Bay, Castletownbere, New Ross, Wicklow, and Dundalk. Products can be quoted according to IMPA references, dimensions, SWL, material specifications, required certificates, or preferred manufacturers. High-quality deck supplies are essential for safe mooring, cargo handling, and routine vessel maintenance. Ensuring the availability of heavy-duty mooring ropes, wire ropes, and lifting accessories is critical for maritime safety. Ship Chandler Ireland verifies that all deck equipment meets required load capacities and safety certifications, ensuring the vessel is fully equipped for challenging North Atlantic operational conditions.</p>
+              <p class="sb-desc">Ship Chandler Ireland sources and supplies a wide range of deck consumables and
+                equipment for vessels calling at Dublin, Cork, Shannon Foynes, Waterford, Rosslare, Drogheda, Galway,
+                Greenore, Killybegs, Bantry Bay, Castletownbere, New Ross, Wicklow, and Dundalk. Products can be quoted
+                according to IMPA references, dimensions, SWL, material specifications, required certificates, or
+                preferred manufacturers. High-quality deck supplies are essential for safe mooring, cargo handling, and
+                routine vessel maintenance. Ensuring the availability of heavy-duty mooring ropes, wire ropes, and
+                lifting accessories is critical for maritime safety. Ship Chandler Ireland verifies that all deck
+                equipment meets required load capacities and safety certifications, ensuring the vessel is fully
+                equipped for challenging North Atlantic operational conditions.</p>
               <div class="sb-items-label"><i class="fas fa-list-check"></i> Available Items</div>
               <div class="sb-items">
                 <span class="sb-item">Mooring ropes and hawsers</span>
@@ -1979,7 +2212,15 @@
             <div class="sb-content">
               <div class="sb-number">04</div>
               <h2 class="sb-title">Engine Stores Supply</h2>
-              <p class="sb-desc">Ship Chandler Ireland supports engine departments with routine consumables, tools, and technical materials for main engines, generators, and auxiliary machinery across Dublin, Cork, Shannon Foynes, Waterford, Rosslare, Drogheda, Galway, Greenore, Killybegs, Bantry Bay, Castletownbere, New Ross, Wicklow, and Dundalk. For technical requirements, we encourage customers to provide maker, model, serial number, part number, and relevant drawings for accurate sourcing. Reliable technical stores are essential for smooth engine-room operations and preventing unexpected breakdowns. Ship Chandler Ireland supplies high-grade filtration elements, gaskets, lubricants, and hydraulic fittings that comply with original manufacturer standards, coordinating prompt dockside and anchorage delivery to keep machinery operating safely and smoothly throughout the vessel's schedule.</p>
+              <p class="sb-desc">Ship Chandler Ireland supports engine departments with routine consumables, tools, and
+                technical materials for main engines, generators, and auxiliary machinery across Dublin, Cork, Shannon
+                Foynes, Waterford, Rosslare, Drogheda, Galway, Greenore, Killybegs, Bantry Bay, Castletownbere, New
+                Ross, Wicklow, and Dundalk. For technical requirements, we encourage customers to provide maker, model,
+                serial number, part number, and relevant drawings for accurate sourcing. Reliable technical stores are
+                essential for smooth engine-room operations and preventing unexpected breakdowns. Ship Chandler Ireland
+                supplies high-grade filtration elements, gaskets, lubricants, and hydraulic fittings that comply with
+                original manufacturer standards, coordinating prompt dockside and anchorage delivery to keep machinery
+                operating safely and smoothly throughout the vessel's schedule.</p>
               <div class="sb-items-label"><i class="fas fa-list-check"></i> Available Items</div>
               <div class="sb-items">
                 <span class="sb-item">Filters</span>
@@ -2020,7 +2261,14 @@
             <div class="sb-content">
               <div class="sb-number">05</div>
               <h2 class="sb-title">Cabin & Galley Stores</h2>
-              <p class="sb-desc">Ship Chandler Ireland provides everyday consumables and equipment required by accommodation and catering departments on merchant vessels calling at Dublin, Cork, Shannon Foynes, Waterford, Rosslare, Drogheda, Galway, Greenore, Killybegs, Bantry Bay, Castletownbere, New Ross, Wicklow, and Dundalk. Cabin and galley stores are sourced to ensure crew comfort and hygiene standards are maintained throughout the voyage. Providing a well-equipped galley and clean living environment is essential for crew welfare. Ship Chandler Ireland supplies durable commercial kitchenware, cleaning chemicals, catering paperware, and hotel supplies suitable for marine conditions, ensuring housekeeping and galley teams remain well-prepared for the sea.</p>
+              <p class="sb-desc">Ship Chandler Ireland provides everyday consumables and equipment required by
+                accommodation and catering departments on merchant vessels calling at Dublin, Cork, Shannon Foynes,
+                Waterford, Rosslare, Drogheda, Galway, Greenore, Killybegs, Bantry Bay, Castletownbere, New Ross,
+                Wicklow, and Dundalk. Cabin and galley stores are sourced to ensure crew comfort and hygiene standards
+                are maintained throughout the voyage. Providing a well-equipped galley and clean living environment is
+                essential for crew welfare. Ship Chandler Ireland supplies durable commercial kitchenware, cleaning
+                chemicals, catering paperware, and hotel supplies suitable for marine conditions, ensuring housekeeping
+                and galley teams remain well-prepared for the sea.</p>
               <div class="sb-items-label"><i class="fas fa-list-check"></i> Available Items</div>
               <div class="sb-items">
                 <span class="sb-item">Bed linen</span>
@@ -2057,7 +2305,14 @@
             <div class="sb-content">
               <div class="sb-number">06</div>
               <h2 class="sb-title">Safety & PPE Supply</h2>
-              <p class="sb-desc">Ship Chandler Ireland supplies safety and personal protective equipment according to vessel requirements and international SOLAS standards at Dublin, Cork, Shannon Foynes, Waterford, Rosslare, Drogheda, Galway, Greenore, Killybegs, Bantry Bay, Castletownbere, New Ross, Wicklow, and Dundalk. Where certification is required, the applicable standard or certificate requirement should be specified in the RFQ. A comprehensive range of maritime safety stores ensures full compliance with international maritime conventions. Ship Chandler Ireland provides certified lifejackets, immersion suits, lifebuoys, firefighting equipment, and heavy-duty personal protective gear, ensuring your vessel maintains statutory readiness and smooth inspection turnaround without unnecessary delays.</p>
+              <p class="sb-desc">Ship Chandler Ireland supplies safety and personal protective equipment according to
+                vessel requirements and international SOLAS standards at Dublin, Cork, Shannon Foynes, Waterford,
+                Rosslare, Drogheda, Galway, Greenore, Killybegs, Bantry Bay, Castletownbere, New Ross, Wicklow, and
+                Dundalk. Where certification is required, the applicable standard or certificate requirement should be
+                specified in the RFQ. A comprehensive range of maritime safety stores ensures full compliance with
+                international maritime conventions. Ship Chandler Ireland provides certified lifejackets, immersion
+                suits, lifebuoys, firefighting equipment, and heavy-duty personal protective gear, ensuring your vessel
+                maintains statutory readiness and smooth inspection turnaround without unnecessary delays.</p>
               <div class="sb-items-label"><i class="fas fa-list-check"></i> Available Items</div>
               <div class="sb-items">
                 <span class="sb-item">Safety helmets</span>
@@ -2092,7 +2347,14 @@
             <div class="sb-content">
               <div class="sb-number">07</div>
               <h2 class="sb-title">Electrical Stores Supply</h2>
-              <p class="sb-desc">Ship Chandler Ireland sources electrical products and consumables for deck, engine-room, and accommodation requirements on commercial vessels calling at Dublin, Cork, Shannon Foynes, Waterford, Rosslare, Drogheda, Galway, Greenore, Killybegs, Bantry Bay, Castletownbere, New Ross, Wicklow, and Dundalk. High-quality electrical stores, including marine lamps, cables, and circuit breakers, ensure the vessel's electrical installations remain reliable and safe. Ship Chandler Ireland stocks a wide assortment of marine-rated consumables, navigation lights, explosion-proof fittings, and multimeter equipment compliant with marine classifications, minimizing downtime and preventing operational delays during port calls.</p>
+              <p class="sb-desc">Ship Chandler Ireland sources electrical products and consumables for deck,
+                engine-room, and accommodation requirements on commercial vessels calling at Dublin, Cork, Shannon
+                Foynes, Waterford, Rosslare, Drogheda, Galway, Greenore, Killybegs, Bantry Bay, Castletownbere, New
+                Ross, Wicklow, and Dundalk. High-quality electrical stores, including marine lamps, cables, and circuit
+                breakers, ensure the vessel's electrical installations remain reliable and safe. Ship Chandler Ireland
+                stocks a wide assortment of marine-rated consumables, navigation lights, explosion-proof fittings, and
+                multimeter equipment compliant with marine classifications, minimizing downtime and preventing
+                operational delays during port calls.</p>
               <div class="sb-items-label"><i class="fas fa-list-check"></i> Available Items</div>
               <div class="sb-items">
                 <span class="sb-item">Marine lamps</span>
@@ -2128,7 +2390,13 @@
             <div class="sb-content">
               <div class="sb-number">08</div>
               <h2 class="sb-title">Marine Chemicals Supply</h2>
-              <p class="sb-desc">Ship Chandler Ireland supplies marine and industrial chemicals for vessel maintenance, water treatment, and operational requirements across Dublin, Cork, Shannon Foynes, Waterford, Rosslare, Drogheda, Galway, Greenore, Killybegs, Bantry Bay, Castletownbere, New Ross, Wicklow, and Dundalk. Product specifications and Safety Data Sheets (SDS) are provided for full regulatory compliance. Ship Chandler Ireland sources quality marine cleaning agents, tank cleaning additives, boiler water treatment chemicals, and oil spill dispersants, maintaining optimal chemical standards to protect onboard machinery and ensure strict environmental compliance across Irish territorial waters.</p>
+              <p class="sb-desc">Ship Chandler Ireland supplies marine and industrial chemicals for vessel maintenance,
+                water treatment, and operational requirements across Dublin, Cork, Shannon Foynes, Waterford, Rosslare,
+                Drogheda, Galway, Greenore, Killybegs, Bantry Bay, Castletownbere, New Ross, Wicklow, and Dundalk.
+                Product specifications and Safety Data Sheets (SDS) are provided for full regulatory compliance. Ship
+                Chandler Ireland sources quality marine cleaning agents, tank cleaning additives, boiler water treatment
+                chemicals, and oil spill dispersants, maintaining optimal chemical standards to protect onboard
+                machinery and ensure strict environmental compliance across Irish territorial waters.</p>
               <div class="sb-items-label"><i class="fas fa-list-check"></i> Available Items</div>
               <div class="sb-items">
                 <span class="sb-item">Cleaning chemicals</span>
@@ -2159,7 +2427,14 @@
             <div class="sb-content">
               <div class="sb-number">09</div>
               <h2 class="sb-title">Welding Equipment & Consumables</h2>
-              <p class="sb-desc">Ship Chandler Ireland sources a comprehensive range of welding and cutting materials for onboard maintenance and repair operations at Dublin, Cork, Shannon Foynes, Waterford, Rosslare, Drogheda, Galway, Greenore, Killybegs, Bantry Bay, Castletownbere, New Ross, Wicklow, and Dundalk. Quality welding equipment, including electrodes, wires, and cutting discs, supports the vessel's crew in performing essential repairs and structural maintenance while in port or at sea. Ship Chandler Ireland provides certified gas cylinders, welding regulators, protective face shields, and heavy-duty welding consumables suitable for maritime workshops, ensuring maintenance crews have the necessary tools to keep operations on schedule.</p>
+              <p class="sb-desc">Ship Chandler Ireland sources a comprehensive range of welding and cutting materials
+                for onboard maintenance and repair operations at Dublin, Cork, Shannon Foynes, Waterford, Rosslare,
+                Drogheda, Galway, Greenore, Killybegs, Bantry Bay, Castletownbere, New Ross, Wicklow, and Dundalk.
+                Quality welding equipment, including electrodes, wires, and cutting discs, supports the vessel's crew in
+                performing essential repairs and structural maintenance while in port or at sea. Ship Chandler Ireland
+                provides certified gas cylinders, welding regulators, protective face shields, and heavy-duty welding
+                consumables suitable for maritime workshops, ensuring maintenance crews have the necessary tools to keep
+                operations on schedule.</p>
               <div class="sb-items-label"><i class="fas fa-list-check"></i> Available Items</div>
               <div class="sb-items">
                 <span class="sb-item">Welding electrodes</span>
@@ -2192,7 +2467,14 @@
             <div class="sb-content">
               <div class="sb-number">10</div>
               <h2 class="sb-title">Marine Spare Parts & Technical Procurement</h2>
-              <p class="sb-desc">Ship Chandler Ireland assists with standard and non-standard marine spare parts and technical equipment for vessels berthing at Dublin, Cork, Shannon Foynes, Waterford, Rosslare, Drogheda, Galway, Greenore, Killybegs, Bantry Bay, Castletownbere, New Ross, Wicklow, and Dundalk. For faster identification, please provide maker, equipment model, serial number, OEM part number, IMPA reference, dimensions, drawings, or clear photographs. Efficient procurement of critical machinery spares helps avoid costly downtime during turnaround. Ship Chandler Ireland coordinates with European and global marine logistics hubs to source genuine and approved replacement parts for pumps, purifiers, compressors, and main engines, ensuring rapid turnaround to prevent unplanned delays.</p>
+              <p class="sb-desc">Ship Chandler Ireland assists with standard and non-standard marine spare parts and
+                technical equipment for vessels berthing at Dublin, Cork, Shannon Foynes, Waterford, Rosslare, Drogheda,
+                Galway, Greenore, Killybegs, Bantry Bay, Castletownbere, New Ross, Wicklow, and Dundalk. For faster
+                identification, please provide maker, equipment model, serial number, OEM part number, IMPA reference,
+                dimensions, drawings, or clear photographs. Efficient procurement of critical machinery spares helps
+                avoid costly downtime during turnaround. Ship Chandler Ireland coordinates with European and global
+                marine logistics hubs to source genuine and approved replacement parts for pumps, purifiers,
+                compressors, and main engines, ensuring rapid turnaround to prevent unplanned delays.</p>
               <div class="sb-items-label"><i class="fas fa-list-check"></i> Available Items</div>
               <div class="sb-items">
                 <span class="sb-item">Main and auxiliary engine parts</span>
@@ -2227,7 +2509,13 @@
             <div class="sb-content">
               <div class="sb-number">11</div>
               <h2 class="sb-title">Nautical Charts & Publications</h2>
-              <p class="sb-desc">Ship Chandler Ireland assists vessels with nautical charts, marine publications, and operational reference materials required for their voyage across Dublin, Cork, Shannon Foynes, Waterford, Rosslare, Drogheda, Galway, Greenore, Killybegs, Bantry Bay, Castletownbere, New Ross, Wicklow, and Dundalk. Access to up-to-date nautical charts and publications is essential for safe navigation and compliance with international maritime regulations. Ship Chandler Ireland supplies Admiralty charts, IMO publications, ITU radio regulations, and logbooks to support deck officers in voyage planning, ensuring immediate readiness and adherence to strict port state control schedules.</p>
+              <p class="sb-desc">Ship Chandler Ireland assists vessels with nautical charts, marine publications, and
+                operational reference materials required for their voyage across Dublin, Cork, Shannon Foynes,
+                Waterford, Rosslare, Drogheda, Galway, Greenore, Killybegs, Bantry Bay, Castletownbere, New Ross,
+                Wicklow, and Dundalk. Access to up-to-date nautical charts and publications is essential for safe
+                navigation and compliance with international maritime regulations. Ship Chandler Ireland supplies
+                Admiralty charts, IMO publications, ITU radio regulations, and logbooks to support deck officers in
+                voyage planning, ensuring immediate readiness and adherence to strict port state control schedules.</p>
               <div class="sb-items-label"><i class="fas fa-list-check"></i> Available Items</div>
               <div class="sb-items">
                 <span class="sb-item">Admiralty nautical charts</span>
@@ -2254,7 +2542,14 @@
             <div class="sb-content">
               <div class="sb-number">12</div>
               <h2 class="sb-title">Tools & Marine Hardware</h2>
-              <p class="sb-desc">Ship Chandler Ireland supplies hand tools, power tools, cutting tools, measuring equipment, fasteners, and general marine hardware for routine maintenance and emergency repairs at Dublin, Cork, Shannon Foynes, Waterford, Rosslare, Drogheda, Galway, Greenore, Killybegs, Bantry Bay, Castletownbere, New Ross, Wicklow, and Dundalk. We ensure that quality tools and marine hardware are readily available to support the technical team with day-to-day vessel upkeep. Ship Chandler Ireland provides professional pneumatic tools, non-sparking safety tools, torque wrenches, and corrosion-resistant fasteners built for harsh marine environments, ensuring maximum operational efficiency while in port.</p>
+              <p class="sb-desc">Ship Chandler Ireland supplies hand tools, power tools, cutting tools, measuring
+                equipment, fasteners, and general marine hardware for routine maintenance and emergency repairs at
+                Dublin, Cork, Shannon Foynes, Waterford, Rosslare, Drogheda, Galway, Greenore, Killybegs, Bantry Bay,
+                Castletownbere, New Ross, Wicklow, and Dundalk. We ensure that quality tools and marine hardware are
+                readily available to support the technical team with day-to-day vessel upkeep. Ship Chandler Ireland
+                provides professional pneumatic tools, non-sparking safety tools, torque wrenches, and
+                corrosion-resistant fasteners built for harsh marine environments, ensuring maximum operational
+                efficiency while in port.</p>
               <div class="sb-items-label"><i class="fas fa-list-check"></i> Available Items</div>
               <div class="sb-items">
                 <span class="sb-item">Hand tools</span>
@@ -2283,7 +2578,14 @@
             <div class="sb-content">
               <div class="sb-number">13</div>
               <h2 class="sb-title">Urgent Ship Supply in Ireland</h2>
-              <p class="sb-desc">Ship Chandler Ireland coordinates urgent procurement and delivery according to vessel ETA, berth availability, port access, and local operating conditions across Dublin, Cork, Shannon Foynes, Waterford, Rosslare, Drogheda, Galway, Greenore, Killybegs, Bantry Bay, Castletownbere, New Ross, Wicklow, and Dundalk. Vessel schedules can change quickly in North Atlantic waters. Urgent enquiries should clearly indicate the required delivery window, confirmed dock location, and specific item priorities to ensure rapid turnaround. Ship Chandler Ireland maintains dedicated emergency response teams and launch boat networks to handle same-day provisions, bonded items, and critical technical supplies, ensuring your vessel's turnaround is supported around the clock.</p>
+              <p class="sb-desc">Ship Chandler Ireland coordinates urgent procurement and delivery according to vessel
+                ETA, berth availability, port access, and local operating conditions across Dublin, Cork, Shannon
+                Foynes, Waterford, Rosslare, Drogheda, Galway, Greenore, Killybegs, Bantry Bay, Castletownbere, New
+                Ross, Wicklow, and Dundalk. Vessel schedules can change quickly in North Atlantic waters. Urgent
+                enquiries should clearly indicate the required delivery window, confirmed dock location, and specific
+                item priorities to ensure rapid turnaround. Ship Chandler Ireland maintains dedicated emergency response
+                teams and launch boat networks to handle same-day provisions, bonded items, and critical technical
+                supplies, ensuring your vessel's turnaround is supported around the clock.</p>
               <div class="sb-items-label"><i class="fas fa-list-check"></i> Service Highlights</div>
               <div class="sb-items">
                 <span class="sb-item">Emergency ETA and short-call coordination</span>
@@ -2293,7 +2595,7 @@
               </div>
               <a href="request-quote.html?category=urgent" class="btn btn-primary sb-cta">Order Urgent Supply <i
                   class="fas fa-arrow-right"></i></a>
-      </div>
+            </div>
     </section>
   </main>
 
@@ -2306,14 +2608,16 @@
         <!-- Col 1: Brand Info with logo.png -->
         <div class="footer-brand">
           <a class="logo" href="index.html" aria-label="Ship Chandler Ireland home">
-            <img src="assets/imgs/logo.png" alt="Ship Chandler Ireland Logo" class="site-logo-img" width="44" height="44">
+            <img src="assets/imgs/logo.png" alt="Ship Chandler Ireland Logo" class="site-logo-img" width="44"
+              height="44">
             <span class="logo-text">
               <strong>Ship Chandler</strong>
               <span>Ireland</span>
             </span>
           </a>
           <p>
-            SHIP CHANDLER IRELAND is a licensed marine supplier providing provisions, technical stores, bonded goods, and emergency vessel supply across all Irish ports and anchorages.
+            SHIP CHANDLER IRELAND is a licensed marine supplier providing provisions, technical stores, bonded goods,
+            and emergency vessel supply across all Irish ports and anchorages.
           </p>
         </div>
 
@@ -2347,10 +2651,12 @@
             </li>
             <li>
               <!-- WhatsApp Bar with Strict Non-Wrapping Properties -->
-              <a class="hero-whatsapp-bar" href="https://wa.me/6590190005" target="_blank" rel="noopener noreferrer" aria-label="Direct WhatsApp contact (+65-9019-0005)">
+              <a class="hero-whatsapp-bar" href="https://wa.me/6590190005" target="_blank" rel="noopener noreferrer"
+                aria-label="Direct WhatsApp contact (+65-9019-0005)">
                 <span class="hero-whatsapp-icon" aria-hidden="true">
                   <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
-                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                    <path
+                      d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
                   </svg>
                 </span>
                 <span class="hero-whatsapp-tag">WHATSAPP:</span>
@@ -2370,7 +2676,8 @@
   </footer>
 
   <!-- Floating WhatsApp Action -->
-  <a href="https://wa.me/6590190005" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Contact (+65-9019-0005)">
+  <a href="https://wa.me/6590190005" class="whatsapp-float" target="_blank" rel="noopener noreferrer"
+    aria-label="WhatsApp Contact (+65-9019-0005)">
     <i class="fa-brands fa-whatsapp"></i>
   </a>
 

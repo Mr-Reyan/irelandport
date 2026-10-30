@@ -2286,7 +2286,7 @@
         <div class="why-head reveal">
           <div class="section-head">
             <span class="eyebrow">Why Choose Us</span>
-            <h2>Reliable supply starts with clear coordination.</h2>
+            <h2>Why Choose Ship Chandler Ireland?</h2>
             <p>Our approach is founded upon rapid communication, competitive direct sourcing, and diligent
               synchronization with vessel schedules.</p>
           </div>
@@ -2514,45 +2514,62 @@
        SCRIPTS: DROPDOWNS, SEARCH & ANIMATIONS
   ========================================= -->
   <script>
-    // --- 49 Ports Network Data from About Page ---
+    // --- 49 Ports Network Data from Excel ---
     const ports = [
-      "Ship Chandler Lagos", "Ship Chandler Apapa", "Ship Chandler Tin Can Island", "Ship Chandler Onne Port",
-      "Ship Chandler Port Harcourt", "Ship Chandler Warri", "Ship Chandler Calabar", "Ship Chandler Bonny",
-      "Ship Chandler Sapele", "Ship Chandler Burutu", "Ship Chandler Koko", "Ship Chandler Escravos",
-      "Ship Chandler Abuja", "Ship Chandler Dar Es Salaam", "Ship Chandler Abidjan", "Ship Chandler Freetown",
-      "Monrovia Ship Chandler", "Ship Chandler Maputo", "Ship Chandler Matadi", "Ship Chandler Beira",
-      "Ship Chandler Angola", "Ship Chandler Lobito", "Ship Chandler Lome", "Ivory Coast Ship Chandler",
-      "Nouadhibou Ship Chandler", "Ship Chandler Luanda", "Ship Chandler Cape Verde", "Ship Chandler Gabon",
-      "Ship Chandler Namibia", "Walvis Bay Ship Chandler", "Ship Chandler Gentil Port - Gabon",
-      "Ship Chandler Takoradi", "Ship Chandler Congo", "Ship Chandler Pointe Noire", "Ship Chandler Djibouti",
-      "Ship Chandler Cabinda", "Ship Chandler Tema", "Ship Chandler Mindelo", "Ship Chandler Casablanca",
-      "Ship Chandler Safi Port Morocco", "Ship Chandler Kamsar", "Ship Chandler Soyo", "Dakar Ship Chandler",
-      "Ship Chandler Senegal", "Ship Chandler Dakar", "Bissau Ship Chandler - Guinea", "Conakry Ship Chandler",
-      "Ship Chandler Cotonou", "Douala Ship Chandler", "Liberia Ship Chandler", "Ship Chandler Mombasa",
-      "Ship Chandlers Saldanha Bay", "Ship Chandler Owendo", "Ship Chandlers Richards Bay"
+      { name: "Bissau Ship Chandler - Guinea", slug: "bissau-ship-chandler-guinea.html" },
+      { name: "Conakry Ship Chandler", slug: "conakry-ship-chandler.html" },
+      { name: "Dakar Ship Chandler", slug: "dakar-ship-chandler.html" },
+      { name: "Douala Ship Chandler", slug: "douala-ship-chandler.html" },
+      { name: "Ivory Coast Ship Chandler", slug: "ivory-coast-ship-chandler.html" },
+      { name: "Liberia Ship Chandler", slug: "liberia-ship-chandler.html" },
+      { name: "Monrovia Ship Chandler", slug: "monrovia-ship-chandler.html" },
+      { name: "Namibia Ship Chandler", slug: "namibia-ship-chandler.html" },
+      { name: "Nouadhibou Ship Chandler", slug: "nouadhibou-ship-chandler.html" },
+      { name: "San Pedro Ship Supply Chandler", slug: "san-pedro-ship-supply-chandler.html" },
+      { name: "Ship Chandler Abidjan", slug: "ship-chandler-abidjan.html" },
+      { name: "Ship Chandler Angola", slug: "ship-chandler-angola.html" },
+      { name: "Ship Chandler Apapa", slug: "ship-chandler-apapa.html" },
+      { name: "Ship Chandler Beira", slug: "ship-chandler-beira.html" },
+      { name: "Ship Chandler Cabinda", slug: "ship-chandler-cabinda.html" },
+      { name: "Ship Chandler Cape Verde", slug: "ship-chandler-cape-verde.html" },
+      { name: "Ship Chandler Casablanca", slug: "ship-chandler-casablanca.html" },
+      { name: "Ship Chandler Congo", slug: "ship-chandler-congo.html" },
+      { name: "Ship Chandler Cotonou", slug: "ship-chandler-cotonou.html" },
+      { name: "Ship Chandler Dakar", slug: "ship-chandler-dakar.html" },
+      { name: "Ship Chandler Dar Es Salaam", slug: "ship-chandler-dar-es-salaam.html" },
+      { name: "Ship Chandler Djibouti", slug: "ship-chandler-djibouti.html" },
+      { name: "Ship Chandler Freetown", slug: "ship-chandler-freetown.html" },
+      { name: "Ship Chandler Gabon", slug: "ship-chandler-gabon.html" },
+      { name: "Ship Chandler Gentil Port - Gabon", slug: "ship-chandler-gentil-port-gabon.html" },
+      { name: "Ship Chandler Kamsar", slug: "ship-chandler-kamsar.html" },
+      { name: "Ship Chandler Lobito", slug: "ship-chandler-lobito.html" },
+      { name: "Ship Chandler Luanda", slug: "ship-chandler-luanda.html" },
+      { name: "Ship Chandler Maputo", slug: "ship-chandler-maputo.html" },
+      { name: "Ship Chandler Matadi", slug: "ship-chandler-matadi.html" },
+      { name: "Ship Chandler Mindelo", slug: "ship-chandler-mindelo.html" },
+      { name: "Ship Chandler Mombasa", slug: "ship-chandler-mombasa.html" },
+      { name: "Ship Chandler Namibia", slug: "ship-chandler-namibia.html" },
+      { name: "Ship Chandler Onne Port Nigeria", slug: "ship-chandler-onne-port-nigeria.html" },
+      { name: "Ship Chandler Owendo", slug: "ship-chandler-owendo.html" },
+      { name: "Ship Chandler Port Ambon", slug: "ship-chandler-port-ambon.html" },
+      { name: "Ship Chandler Safi Port Morocco", slug: "ship-chandler-safi-port-morocco.html" },
+      { name: "Ship Chandler Senegal", slug: "ship-chandler-senegal.html" },
+      { name: "Ship Chandler Soyo", slug: "ship-chandler-soyo.html" },
+      { name: "Ship Chandler Takoradi", slug: "ship-chandler-takoradi.html" },
+      { name: "Ship Chandler Tema", slug: "ship-chandler-tema.html" },
+      { name: "Ship Chandlers Richards Bay", slug: "ship-chandlers-richards-bay.html" },
+      { name: "Ship Chandlers Saldanha Bay", slug: "ship-chandlers-saldanha-bay.html" },
+      { name: "Shipchandler Lagos", slug: "shipchandler-lagos.html" },
+      { name: "Shipchandler Lome", slug: "shipchandler-lome.html" },
+      { name: "Shipchandler Pointe Noire", slug: "shipchandler-pointe-noire.html" },
+      { name: "Walvis Bay Ship Chandler", slug: "walvis-bay-ship-chandler.html" }
     ];
 
-    // Known special filename mappings to match exact port files in ports/
-    const specialFileMap = {
-      "ship-chandler-lagos": "shipchandler-lagos.html",
-      "ship-chandler-lome": "shipchandler-lome.html",
-      "ship-chandler-pointe-noire": "shipchandler-pointe-noire.html",
-      "ship-chandler-onne-port": "ship-chandler-onne-port-nigeria.html",
-      "ship-chandler-saldanha-bay": "ship-chandlers-saldanha-bay.html",
-      "ship-chandler-richards-bay": "ship-chandlers-richards-bay.html",
-      "ship-chandler-gentil-port-gabon": "ship-chandler-gentil-port-gabon.html",
-      "bissau-ship-chandler-guinea": "bissau-ship-chandler-guinea.html"
-    };
-
-    function getPortUrl(portName) {
-      const baseSlug = portName.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
-      if (specialFileMap[baseSlug]) {
-        return 'ports/' + specialFileMap[baseSlug];
-      }
-      return 'ports/' + baseSlug + '.html';
+    function getPortUrl(portSlug) {
+      return 'ports/' + portSlug;
     }
 
-    // Populate Mega Menu in 3 Groups (Identical to About Page)
+    // Populate Mega Menu in 3 Groups from Excel Data
     const megaList = document.getElementById('mega-port-list');
     if (megaList) {
       const third = Math.ceil(ports.length / 3);
@@ -2563,20 +2580,20 @@
       function createPortGroup(title, items) {
         const group = document.createElement('div');
         group.className = 'mega-group';
-        group.innerHTML = `<h4>${title}</h4>`;
+        group.innerHTML = '<h4>' + title + '</h4>';
         items.forEach(port => {
           const a = document.createElement('a');
-          a.href = getPortUrl(port);
-          a.textContent = port;
-          a.dataset.port = port.toLowerCase();
+          a.href = getPortUrl(port.slug);
+          a.textContent = port.name;
+          a.dataset.port = port.name.toLowerCase();
           group.appendChild(a);
         });
         return group;
       }
 
-      megaList.appendChild(createPortGroup('Hubs & Regional Ports (A–F)', col1));
-      megaList.appendChild(createPortGroup('Major African Ports (G–M)', col2));
-      megaList.appendChild(createPortGroup('Commercial Ports (N–Z)', col3));
+      megaList.appendChild(createPortGroup('Ports & Terminals (A–G)', col1));
+      megaList.appendChild(createPortGroup('Commercial Hubs (L–S)', col2));
+      megaList.appendChild(createPortGroup('Regional Ports (S–W)', col3));
 
       // Mega Menu Real-Time Search Filter
       const searchInput = document.getElementById('mega-port-search');
