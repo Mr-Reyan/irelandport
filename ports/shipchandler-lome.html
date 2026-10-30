@@ -1,124 +1,168 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>Shipchandler Lome | Ship Supply, Provisions & Marine Stores</title>
-  <meta name="description" content="Shipchandler Lome provides professional ship supply, provisions, bonded stores, deck and engine stores, safety equipment, spare parts and marine procurement services.">
+  <title>ShipChandler Lome | Ship Supply, Provisions & Marine Stores</title>
+  <meta name="description" content="ShipChandler Lome provides professional ship supply, provisions, bonded stores, deck and engine stores, safety equipment, spare parts and marine procurement services.">
   <meta name="keywords" content="ship chandler, ship supply, provisions, marine stores, bonded stores, deck stores, engine stores, vessel supply, marine procurement">
-  <meta name="author" content="Ship Chandler Libya CO., LTD">
-  
+  <meta name="author" content="SHIP CHANDLER IRELAND">
+  <link rel="canonical" href="https://shipchandlerireland.com/ports/shipchandler-lome.html">
+
   <!-- Open Graph Meta Tags -->
-  <meta property="og:title" content="Shipchandler Lome | Ship Supply, Provisions & Marine Stores">
-  <meta property="og:description" content="Shipchandler Lome provides professional ship supply, provisions, bonded stores, deck and engine stores, safety equipment, spare parts and marine procurement services.">
+  <meta property="og:title" content="ShipChandler Lome | Ship Supply, Provisions & Marine Stores">
+  <meta property="og:description" content="ShipChandler Lome provides professional ship supply, provisions, bonded stores, deck and engine stores, safety equipment, spare parts and marine procurement services.">
   <meta property="og:type" content="website">
-  
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
-  
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <meta property="og:url" content="https://shipchandlerireland.com/ports/shipchandler-lome.html">
+  <meta property="og:site_name" content="Ship Chandler Ireland">
+  <meta name="theme-color" content="#14583f">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="../favicon.png">
+  <link rel="icon" type="image/png" href="../assets/imgs/favicon.png">
   <link rel="apple-touch-icon" href="../assets/imgs/favicon.png">
 
-  <!-- Port Pages CSS -->
+  <!-- Google Fonts: Inter + Plus Jakarta Sans + Playfair Display -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Centralized Port Pages CSS -->
   <link rel="stylesheet" href="../assets/css/port-pages.css">
 </head>
-<body>
 
-  <!-- HEADER / NAVBAR -->
+<body>
+  <!-- =========================================
+       SITE HEADER (Exact Ireland Match)
+  ========================================= -->
   <header class="site-header" id="site-header">
-    <div class="header-inner">
-      <a class="logo" href="../index.html">
-        <img src="../assets/imgs/logo.png" alt="ShipChandler Nigeria Logo" width="36" height="36">
+    <div class="container header-inner">
+      <a class="logo" href="../index.html" aria-label="Ship Chandler Ireland home">
+        <img src="../assets/imgs/logo.png" alt="Ship Chandler Ireland Logo" class="site-logo-img" width="44" height="44">
         <span class="logo-text">
-          <strong>ShipChandler</strong>
-          <span>Nigeria</span>
+          <strong>Ship Chandler</strong>
+          <span>Ireland</span>
         </span>
       </a>
 
-      <button class="nav-toggle" type="button" aria-label="Toggle navigation">
-        <span></span><span></span><span></span>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Open navigation">
+        <i class="fa-solid fa-bars"></i>
       </button>
 
-      <nav class="primary-nav" id="primary-nav">
+      <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
         <ul class="nav-list">
           <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="../about.html">About</a></li>
+
+          <!-- Services Dropdown (Direct under button, reduced width) -->
           <li class="nav-item has-dropdown">
-            <a class="nav-link" href="../services.html">Services <span class="nav-arrow"><svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></span></a>
+            <a class="nav-link dropdown-trigger" href="../services.html" aria-haspopup="true" aria-expanded="false">
+              Services <span class="nav-arrow"><i class="fa-solid fa-chevron-down"></i></span>
+            </a>
             <div class="dropdown-menu">
-              <a href="../services.html#provisions">Provisions Supply</a>
-              <a href="../services.html#deck">Deck Stores</a>
-              <a href="../services.html#cabin">Cabin & Galley</a>
-              <a href="../services.html#engine">Engine Stores</a>
-              <a href="../services.html#bonded">Bonded Stores</a>
-              <a href="../services.html#safety">Safety & PPE</a>
+              <a href="../services.html#provisions"><i class="fa-solid fa-carrot"></i>Provisions Supply</a>
+              <a href="../services.html#bonded"><i class="fa-solid fa-boxes-stacked"></i>Bonded Stores</a>
+              <a href="../services.html#deck"><i class="fa-solid fa-anchor"></i>Deck Stores</a>
+              <a href="../services.html#engine"><i class="fa-solid fa-gears"></i>Engine Stores</a>
+              <a href="../services.html#cabin"><i class="fa-solid fa-bed"></i>Cabin &amp; Galley</a>
+              <a href="../services.html#safety"><i class="fa-solid fa-helmet-safety"></i>Safety &amp; PPE</a>
+              <a href="../services.html#electrical"><i class="fa-solid fa-bolt"></i>Electrical Stores</a>
+              <a href="../services.html#chemicals"><i class="fa-solid fa-flask"></i>Marine Chemicals</a>
+              <a href="../services.html#welding"><i class="fa-solid fa-fire-burner"></i>Welding Equipment</a>
+              <a href="../services.html#spare-parts"><i class="fa-solid fa-screwdriver-wrench"></i>Spare Parts</a>
+              <a href="../services.html#publications"><i class="fa-solid fa-compass"></i>Nautical Charts</a>
+              <a href="../services.html#tools"><i class="fa-solid fa-toolbox"></i>Tools &amp; Hardware</a>
+              <a href="../services.html#urgent"><i class="fa-solid fa-truck-fast"></i>Urgent Supply</a>
             </div>
           </li>
-          <li class="nav-item has-dropdown">
-            <a class="nav-link" href="javascript:void(0)">Ports <span class="nav-arrow"><svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></span></a>
+
+          <!-- Ports Dropdown (Center aligned, anti-flicker bridge, reduced height) -->
+          <li class="nav-item has-dropdown active">
+            <a class="nav-link dropdown-trigger" href="javascript:void(0)" aria-haspopup="true" aria-expanded="false">
+              Ports <span class="nav-arrow"><i class="fa-solid fa-chevron-down"></i></span>
+            </a>
             <div class="mega-menu">
               <div class="mega-header">
-                <div class="mega-header-title">Nigerian & African Port Network</div>
+                <div class="mega-header-title">
+                  Port Network &amp; Anchorages
+                  <small>Comprehensive port supply &amp; anchorage coverage</small>
+                </div>
                 <div class="mega-search">
-                  <i class="fas fa-search" style="color:var(--gray-400);"></i>
-                  <input type="text" id="mega-port-search" placeholder="Search ports...">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                  <input type="search" id="mega-port-search" placeholder="Search ports..." aria-label="Search ports">
                 </div>
               </div>
               <div class="mega-grid" id="mega-port-list">
-                <!-- Populated via JS -->
+                <!-- Populated via JavaScript dynamically -->
               </div>
             </div>
           </li>
+
           <li class="nav-item"><a class="nav-link" href="../contact.html">Contact</a></li>
         </ul>
-        <a class="btn btn-primary" style="padding: 10px 24px; font-size: 0.8rem;" href="../request-quote.html">Get Quote</a>
+
+        <a class="btn btn-primary" href="../request-quote.html">
+          Request a Quote <i class="fa-solid fa-arrow-right"></i>
+        </a>
       </nav>
     </div>
+    <div class="nav-scrim" aria-hidden="true"></div>
   </header>
 
   <main>
-    <!-- PORT HERO - EDITORIAL SPLIT -->
-    <section class="port-hero">
-      <img src="../assets/imgs/nigeria-port-ship-image-portrait.jpg" alt="Shipchandler Lome" class="port-hero-bg">
+    <!-- =========================================
+         PORT HERO (No button in hero as requested)
+    ========================================= -->
+    <section class="hero">
       <div class="container">
-        <div class="port-hero-content">
+        <div class="hero-copy">
           <ul class="breadcrumb">
             <li><a href="../index.html">Home</a></li>
             <li><span>/</span></li>
-            <li><a href="../index.html#ports">Ports</a></li>
+            <li><a href="../services.html">Ports</a></li>
             <li><span>/</span></li>
-            <li style="color: rgba(255,255,255,0.7);">Shipchandler Lome</li>
+            <li style="color: rgba(255,255,255,0.7);">ShipChandler Lome</li>
           </ul>
           <span class="hero-eyebrow">Professional Marine Supply</span>
-          <h1 class="hero-title">Shipchandler <span>Lome</span></h1>
-          <p class="hero-desc">Shipchandler Lome provides professional ship supply, provisions, bonded stores, deck and engine stores, safety equipment, spare parts and marine procurement services.</p>
+          <h1 class="hero-title">ShipChandler Lome</h1>
+          <p class="hero-desc">
+            ShipChandler Lome provides professional ship supply, provisions, bonded stores, deck and engine stores, safety equipment, spare parts and marine procurement services.
+          </p>
+        </div>
+      </div>
+      <div class="hero-bottomline">
+        <div class="container hero-bottom-inner">
+          <span><i class="fa-solid fa-location-dot"></i> Port of ShipChandler Lome, Terminals &amp; Offshore Anchorages</span>
+          <span><i class="fa-solid fa-clock"></i> Rapid RFQ &amp; Berth Turnaround Dispatch</span>
+          <span><i class="fa-solid fa-anchor"></i> IMPA &amp; ISSA Compliant Maritime Procurement</span>
         </div>
       </div>
     </section>
 
-    <!-- ARTICLE CONTENT SECTION -->
+    <!-- =========================================
+         ARTICLE CONTENT SECTION (Preserving 100% Client Content)
+    ========================================= -->
     <section class="article-section">
-      <div class="container">
-        <div class="article-container">
+      <div class="container article-layout">
+
+        <!-- Main Complete Content Column -->
+        <div class="article-main-card">
           <article class="article-content">
-            <p>Shipchandler Lome provides comprehensive ship chandling, marine procurement and vessel supply services for commercial ships calling at the local port, terminals and surrounding anchorage areas. Shipchandler Lome works with ship owners, ship managers, vessel operators, captains, chief engineers, purchasing departments, technical superintendents and local agents who require reliable supplies within the limited time available during a port call.</p>
-            <p>The main objective of Shipchandler Lome is to provide one dependable point of contact for a broad range of vessel requirements. Whether a vessel requires fresh provisions, bonded stores, deck stores, engine stores, cabin and galley items, safety equipment, electrical materials, marine chemicals, tools, spare parts or urgent technical supplies, Shipchandler Lome can coordinate sourcing and delivery according to the vessel's ETA, berth, anchorage position and operational schedule.</p>
-            <p>Fast communication is essential in ship supply. Shipchandler Lome therefore focuses on prompt RFQ handling, clear quotations, correct product identification, practical alternatives when requested items are unavailable and efficient coordination with the vessel or appointed agent. Advance requisitions are always recommended, but Shipchandler Lome can also assist with urgent requirements when local availability and port conditions permit.</p>
-
-            <h2>Professional Ship Supply Services by Shipchandler Lome</h2>
-            <p>Shipchandler Lome provides ship supply support for a wide range of merchant and commercial vessels. Every order is reviewed according to the vessel's actual requirements, specifications, quantities and requested delivery time. The aim is to reduce the workload of the vessel's purchasing team by combining multiple categories of stores into one coordinated supply.</p>
-            <p>Customers can send requisitions in Excel, PDF, Word or other commonly used formats. IMPA and ISSA references, maker names, model numbers, photographs, drawings and technical specifications can be included to help Shipchandler Lome identify the correct products.</p>
-            <p>The supply range of Shipchandler Lome covers routine consumables as well as urgent and non-standard requirements. Where the exact requested brand is unavailable, Shipchandler Lome can offer an alternative for customer approval before delivery.</p>
-
-            <h2>Shipchandler Lome â€“ Ship Provisions Supply</h2>
-            <p>Shipchandler Lome supplies fresh, chilled, frozen and dry provisions for vessel crews, galley departments and catering operations. Provision orders can be prepared according to crew nationality, preferred brands, pack sizes, dietary requirements and expected voyage duration.</p>
-            <p>The provision range available through Shipchandler Lome may include:</p>
+            <p>ShipChandler Lome provides comprehensive ship chandling, marine procurement and vessel supply services for commercial ships calling at the local port, terminals and surrounding anchorage areas. ShipChandler Lome works with ship owners, ship managers, vessel operators, captains, chief engineers, purchasing departments, technical superintendents and local agents who require reliable supplies within the limited time available during a port call.</p>
+            <p>The main objective of ShipChandler Lome is to provide one dependable point of contact for a broad range of vessel requirements. Whether a vessel requires fresh provisions, bonded stores, deck stores, engine stores, cabin and galley items, safety equipment, electrical materials, marine chemicals, tools, spare parts or urgent technical supplies, ShipChandler Lome can coordinate sourcing and delivery according to the vessel's ETA, berth, anchorage position and operational schedule.</p>
+            <p>Fast communication is essential in ship supply. ShipChandler Lome therefore focuses on prompt RFQ handling, clear quotations, correct product identification, practical alternatives when requested items are unavailable and efficient coordination with the vessel or appointed agent. Advance requisitions are always recommended, but ShipChandler Lome can also assist with urgent requirements when local availability and port conditions permit.</p>
+            <h2>Professional Ship Supply Services by ShipChandler Lome</h2>
+            <p>ShipChandler Lome provides ship supply support for a wide range of merchant and commercial vessels. Every order is reviewed according to the vessel's actual requirements, specifications, quantities and requested delivery time. The aim is to reduce the workload of the vessel's purchasing team by combining multiple categories of stores into one coordinated supply.</p>
+            <p>Customers can send requisitions in Excel, PDF, Word or other commonly used formats. IMPA and ISSA references, maker names, model numbers, photographs, drawings and technical specifications can be included to help ShipChandler Lome identify the correct products.</p>
+            <p>The supply range of ShipChandler Lome covers routine consumables as well as urgent and non-standard requirements. Where the exact requested brand is unavailable, ShipChandler Lome can offer an alternative for customer approval before delivery.</p>
+            <h2>ShipChandler Lome &ndash; Ship Provisions Supply</h2>
+            <p>ShipChandler Lome supplies fresh, chilled, frozen and dry provisions for vessel crews, galley departments and catering operations. Provision orders can be prepared according to crew nationality, preferred brands, pack sizes, dietary requirements and expected voyage duration.</p>
+            <p>The provision range available through ShipChandler Lome may include:</p>
             <ul>
               <li>Fresh fruits and vegetables</li>
               <li>Fresh and frozen meat</li>
@@ -143,12 +187,11 @@
               <li>International and local food products</li>
               <li>Special dietary products upon request</li>
             </ul>
-            <p>Shipchandler Lome understands that quality and freshness are particularly important for provision supply. Products are selected with attention to condition, shelf life, packaging and requested specifications. Where possible, fresh products are procured close to the required delivery time.</p>
-            <p>For large provision orders, Shipchandler Lome can coordinate the different categories so that chilled, frozen and dry goods are prepared for a single organized vessel delivery. Customers are encouraged to indicate any prohibited substitutions or mandatory brands directly in the requisition.</p>
-
-            <h2>Shipchandler Lome â€“ Bonded Stores and Crew Welfare Items</h2>
-            <p>Shipchandler Lome can arrange bonded stores and crew welfare items subject to local customs rules, port regulations and product availability. Bonded supply requirements should preferably be sent in advance because customs procedures may differ from ordinary provision or technical store deliveries.</p>
-            <p>Bonded and welfare requirements handled by Shipchandler Lome may include:</p>
+            <p>ShipChandler Lome understands that quality and freshness are particularly important for provision supply. Products are selected with attention to condition, shelf life, packaging and requested specifications. Where possible, fresh products are procured close to the required delivery time.</p>
+            <p>For large provision orders, ShipChandler Lome can coordinate the different categories so that chilled, frozen and dry goods are prepared for a single organized vessel delivery. Customers are encouraged to indicate any prohibited substitutions or mandatory brands directly in the requisition.</p>
+            <h2>ShipChandler Lome &ndash; Bonded Stores and Crew Welfare Items</h2>
+            <p>ShipChandler Lome can arrange bonded stores and crew welfare items subject to local customs rules, port regulations and product availability. Bonded supply requirements should preferably be sent in advance because customs procedures may differ from ordinary provision or technical store deliveries.</p>
+            <p>Bonded and welfare requirements handled by ShipChandler Lome may include:</p>
             <ul>
               <li>Tobacco products where legally permitted</li>
               <li>Confectionery</li>
@@ -159,11 +202,10 @@
               <li>Selected duty-free products</li>
               <li>Other requested bonded stores subject to local regulations</li>
             </ul>
-            <p>Shipchandler Lome coordinates bonded requirements with the vessel, purchasing department and, where necessary, the local agent. Availability and customs status are confirmed during the quotation process.</p>
-
-            <h2>Shipchandler Lome â€“ Deck Stores Supply</h2>
-            <p>Shipchandler Lome supplies deck departments with marine consumables, maintenance materials, mooring equipment, lifting accessories, tools and general deck stores. Products can be quoted by description, dimension, specification, IMPA reference or requested manufacturer.</p>
-            <p>Deck stores supplied by Shipchandler Lome may include:</p>
+            <p>ShipChandler Lome coordinates bonded requirements with the vessel, purchasing department and, where necessary, the local agent. Availability and customs status are confirmed during the quotation process.</p>
+            <h2>ShipChandler Lome &ndash; Deck Stores Supply</h2>
+            <p>ShipChandler Lome supplies deck departments with marine consumables, maintenance materials, mooring equipment, lifting accessories, tools and general deck stores. Products can be quoted by description, dimension, specification, IMPA reference or requested manufacturer.</p>
+            <p>Deck stores supplied by ShipChandler Lome may include:</p>
             <ul>
               <li>Mooring ropes and hawsers</li>
               <li>Polypropylene and synthetic ropes</li>
@@ -191,11 +233,10 @@
               <li>Personal protective equipment</li>
               <li>General deck maintenance consumables</li>
             </ul>
-            <p>When lifting equipment or safety-related items are requested, Shipchandler Lome asks customers to specify SWL, dimensions, material, required certification and applicable standard. This helps avoid delays caused by incomplete specifications.</p>
-
-            <h2>Shipchandler Lome â€“ Engine Stores Supply</h2>
-            <p>Shipchandler Lome supports chief engineers and engine departments with technical stores, workshop consumables, maintenance products and selected machinery spare parts. Correct identification is important for engine-room requirements, so detailed information should be provided whenever possible.</p>
-            <p>The engine store range supplied by Shipchandler Lome may include:</p>
+            <p>When lifting equipment or safety-related items are requested, ShipChandler Lome asks customers to specify SWL, dimensions, material, required certification and applicable standard. This helps avoid delays caused by incomplete specifications.</p>
+            <h2>ShipChandler Lome &ndash; Engine Stores Supply</h2>
+            <p>ShipChandler Lome supports chief engineers and engine departments with technical stores, workshop consumables, maintenance products and selected machinery spare parts. Correct identification is important for engine-room requirements, so detailed information should be provided whenever possible.</p>
+            <p>The engine store range supplied by ShipChandler Lome may include:</p>
             <ul>
               <li>Filters</li>
               <li>Bearings</li>
@@ -228,11 +269,10 @@
               <li>Engine-room maintenance products</li>
               <li>Selected machinery spare parts</li>
             </ul>
-            <p>For technical items, Shipchandler Lome recommends providing maker, model, serial number, OEM part number, dimensions, material specification, drawings or clear photographs. This information enables the procurement team to identify the requested item more accurately and reduce the risk of incorrect supply.</p>
-
-            <h2>Shipchandler Lome â€“ Cabin and Galley Stores</h2>
-            <p>Shipchandler Lome provides accommodation, cabin and galley departments with everyday consumables and equipment required for crew comfort and vessel operations.</p>
-            <p>Cabin and galley stores available through Shipchandler Lome may include:</p>
+            <p>For technical items, ShipChandler Lome recommends providing maker, model, serial number, OEM part number, dimensions, material specification, drawings or clear photographs. This information enables the procurement team to identify the requested item more accurately and reduce the risk of incorrect supply.</p>
+            <h2>ShipChandler Lome &ndash; Cabin and Galley Stores</h2>
+            <p>ShipChandler Lome provides accommodation, cabin and galley departments with everyday consumables and equipment required for crew comfort and vessel operations.</p>
+            <p>Cabin and galley stores available through ShipChandler Lome may include:</p>
             <ul>
               <li>Bed linen</li>
               <li>Bed sheets</li>
@@ -259,10 +299,9 @@
               <li>Cabin consumables</li>
               <li>Crew welfare products</li>
             </ul>
-            <p>Shipchandler Lome can combine cabin, galley and provision requirements into a single coordinated order, helping the vessel reduce the number of separate suppliers involved during the port call.</p>
-
-            <h2>Shipchandler Lome â€“ Safety Equipment and PPE</h2>
-            <p>Shipchandler Lome can supply personal protective equipment and selected marine safety products required for routine vessel operations and maintenance.</p>
+            <p>ShipChandler Lome can combine cabin, galley and provision requirements into a single coordinated order, helping the vessel reduce the number of separate suppliers involved during the port call.</p>
+            <h2>ShipChandler Lome &ndash; Safety Equipment and PPE</h2>
+            <p>ShipChandler Lome can supply personal protective equipment and selected marine safety products required for routine vessel operations and maintenance.</p>
             <p>Safety supplies may include:</p>
             <ul>
               <li>Safety helmets</li>
@@ -284,11 +323,10 @@
               <li>Life-saving related equipment</li>
               <li>Other marine PPE</li>
             </ul>
-            <p>Where certification or a particular international standard is mandatory, the customer should state this clearly in the RFQ. Shipchandler Lome can then check availability against the requested specification before confirming the order.</p>
-
-            <h2>Shipchandler Lome â€“ Electrical Stores and Consumables</h2>
-            <p>Shipchandler Lome sources electrical stores for deck, engine-room, workshop and accommodation requirements. The supply range can include both common consumables and selected technical components.</p>
-            <p>Electrical stores supplied by Shipchandler Lome may include:</p>
+            <p>Where certification or a particular international standard is mandatory, the customer should state this clearly in the RFQ. ShipChandler Lome can then check availability against the requested specification before confirming the order.</p>
+            <h2>ShipChandler Lome &ndash; Electrical Stores and Consumables</h2>
+            <p>ShipChandler Lome sources electrical stores for deck, engine-room, workshop and accommodation requirements. The supply range can include both common consumables and selected technical components.</p>
+            <p>Electrical stores supplied by ShipChandler Lome may include:</p>
             <ul>
               <li>Marine lamps</li>
               <li>LED lamps and fittings</li>
@@ -311,10 +349,9 @@
               <li>Insulation materials</li>
               <li>Other electrical consumables</li>
             </ul>
-            <p>For specialized electrical equipment, Shipchandler Lome recommends providing voltage, frequency, rating, maker, model and photographs of the existing component.</p>
-
-            <h2>Shipchandler Lome â€“ Marine Chemicals and Cleaning Products</h2>
-            <p>Shipchandler Lome can provide marine and industrial chemicals for routine maintenance, cleaning and vessel operations. Chemical products are supplied according to availability and the technical requirements stated by the customer.</p>
+            <p>For specialized electrical equipment, ShipChandler Lome recommends providing voltage, frequency, rating, maker, model and photographs of the existing component.</p>
+            <h2>ShipChandler Lome &ndash; Marine Chemicals and Cleaning Products</h2>
+            <p>ShipChandler Lome can provide marine and industrial chemicals for routine maintenance, cleaning and vessel operations. Chemical products are supplied according to availability and the technical requirements stated by the customer.</p>
             <p>Marine chemicals may include:</p>
             <ul>
               <li>General cleaning chemicals</li>
@@ -330,10 +367,9 @@
               <li>Cleaning concentrates</li>
               <li>Specialized detergents</li>
             </ul>
-            <p>Where applicable, Safety Data Sheets can be requested. Shipchandler Lome recommends specifying the intended application, required pack size and preferred brand or equivalent when ordering chemicals.</p>
-
-            <h2>Shipchandler Lome â€“ Welding Equipment and Workshop Consumables</h2>
-            <p>Shipchandler Lome can source welding and workshop materials for routine repairs and maintenance carried out by the vessel's crew.</p>
+            <p>Where applicable, Safety Data Sheets can be requested. ShipChandler Lome recommends specifying the intended application, required pack size and preferred brand or equivalent when ordering chemicals.</p>
+            <h2>ShipChandler Lome &ndash; Welding Equipment and Workshop Consumables</h2>
+            <p>ShipChandler Lome can source welding and workshop materials for routine repairs and maintenance carried out by the vessel's crew.</p>
             <p>Products may include:</p>
             <ul>
               <li>Welding electrodes</li>
@@ -353,11 +389,10 @@
               <li>Measuring tools</li>
               <li>General repair consumables</li>
             </ul>
-            <p>Industrial gases and other regulated products are subject to local rules, cylinder arrangements and availability. Shipchandler Lome confirms such requirements individually.</p>
-
-            <h2>Shipchandler Lome â€“ Marine Spare Parts and Technical Procurement</h2>
-            <p>In addition to ordinary ship stores, Shipchandler Lome can assist customers with marine spare parts and technical procurement. The exact scope depends on the equipment, manufacturer, required delivery time and local or international availability.</p>
-            <p>Technical procurement through Shipchandler Lome may include:</p>
+            <p>Industrial gases and other regulated products are subject to local rules, cylinder arrangements and availability. ShipChandler Lome confirms such requirements individually.</p>
+            <h2>ShipChandler Lome &ndash; Marine Spare Parts and Technical Procurement</h2>
+            <p>In addition to ordinary ship stores, ShipChandler Lome can assist customers with marine spare parts and technical procurement. The exact scope depends on the equipment, manufacturer, required delivery time and local or international availability.</p>
+            <p>Technical procurement through ShipChandler Lome may include:</p>
             <ul>
               <li>Main engine spare parts</li>
               <li>Auxiliary engine spare parts</li>
@@ -378,15 +413,13 @@
               <li>OEM spare parts</li>
               <li>Suitable alternative spare parts subject to customer approval</li>
             </ul>
-            <p>To obtain an accurate quotation, customers should provide as much technical information as possible. Shipchandler Lome can work from maker and model information, serial numbers, nameplate photographs, OEM references, IMPA codes, technical drawings and sample photographs.</p>
-            <p>If an exact item cannot be sourced within the vessel's port stay, Shipchandler Lome may propose an alternative solution or advise on the realistic delivery lead time.</p>
-
-            <h2>Shipchandler Lome â€“ Nautical Charts and Marine Publications</h2>
-            <p>Subject to local availability, Shipchandler Lome can assist vessels with nautical charts, marine publications and operational reference materials.</p>
+            <p>To obtain an accurate quotation, customers should provide as much technical information as possible. ShipChandler Lome can work from maker and model information, serial numbers, nameplate photographs, OEM references, IMPA codes, technical drawings and sample photographs.</p>
+            <p>If an exact item cannot be sourced within the vessel's port stay, ShipChandler Lome may propose an alternative solution or advise on the realistic delivery lead time.</p>
+            <h2>ShipChandler Lome &ndash; Nautical Charts and Marine Publications</h2>
+            <p>Subject to local availability, ShipChandler Lome can assist vessels with nautical charts, marine publications and operational reference materials.</p>
             <p>Customers should provide the publication title, number, edition and required quantity. Advance notice is recommended for specialized publications.</p>
-
-            <h2>Shipchandler Lome â€“ Tools, Hardware and Technical Materials</h2>
-            <p>Shipchandler Lome supplies a wide selection of tools and general technical materials required for routine shipboard maintenance.</p>
+            <h2>ShipChandler Lome &ndash; Tools, Hardware and Technical Materials</h2>
+            <p>ShipChandler Lome supplies a wide selection of tools and general technical materials required for routine shipboard maintenance.</p>
             <p>The range may include:</p>
             <ul>
               <li>Hand tools</li>
@@ -408,15 +441,13 @@
               <li>Packing materials</li>
               <li>General marine hardware</li>
             </ul>
-            <p>Non-standard items can be sourced against detailed specifications. Shipchandler Lome encourages customers to attach photographs or drawings when the item cannot be clearly identified from a written description alone.</p>
-
-            <h2>Shipchandler Lome â€“ Technical and Repair Support</h2>
-            <p>Depending on local availability, Shipchandler Lome can coordinate selected technical services and repair support through local specialists and service partners. The scope may include mechanical, electrical, piping, welding and other routine vessel requirements.</p>
-            <p>Technical service requests should contain a clear description of the problem, vessel details, equipment information, photographs and the required completion time. Shipchandler Lome can then evaluate availability and coordinate the appropriate local support.</p>
-
-            <h2>Urgent Ship Supply by Shipchandler Lome</h2>
-            <p>Vessel schedules frequently change and urgent requirements can arise shortly before arrival or departure. Shipchandler Lome understands the importance of rapid communication in these situations.</p>
-            <p>For urgent orders, Shipchandler Lome works to coordinate sourcing, preparation and delivery according to:</p>
+            <p>Non-standard items can be sourced against detailed specifications. ShipChandler Lome encourages customers to attach photographs or drawings when the item cannot be clearly identified from a written description alone.</p>
+            <h2>ShipChandler Lome &ndash; Technical and Repair Support</h2>
+            <p>Depending on local availability, ShipChandler Lome can coordinate selected technical services and repair support through local specialists and service partners. The scope may include mechanical, electrical, piping, welding and other routine vessel requirements.</p>
+            <p>Technical service requests should contain a clear description of the problem, vessel details, equipment information, photographs and the required completion time. ShipChandler Lome can then evaluate availability and coordinate the appropriate local support.</p>
+            <h2>Urgent Ship Supply by ShipChandler Lome</h2>
+            <p>Vessel schedules frequently change and urgent requirements can arise shortly before arrival or departure. ShipChandler Lome understands the importance of rapid communication in these situations.</p>
+            <p>For urgent orders, ShipChandler Lome works to coordinate sourcing, preparation and delivery according to:</p>
             <ul>
               <li>Vessel ETA</li>
               <li>Berthing schedule</li>
@@ -427,10 +458,9 @@
               <li>Product availability</li>
               <li>Required sailing time</li>
             </ul>
-            <p>Urgent RFQs should clearly state the final delivery deadline. The earlier Shipchandler Lome receives the complete requisition and vessel information, the better the possibility of arranging all requested items before departure.</p>
-
-            <h2>Vessels Supported by Shipchandler Lome</h2>
-            <p>Shipchandler Lome can provide ship chandling and marine procurement support for many vessel types, including:</p>
+            <p>Urgent RFQs should clearly state the final delivery deadline. The earlier ShipChandler Lome receives the complete requisition and vessel information, the better the possibility of arranging all requested items before departure.</p>
+            <h2>Vessels Supported by ShipChandler Lome</h2>
+            <p>ShipChandler Lome can provide ship chandling and marine procurement support for many vessel types, including:</p>
             <ul>
               <li>Bulk carriers</li>
               <li>Container vessels</li>
@@ -452,10 +482,9 @@
               <li>Project cargo vessels</li>
               <li>Other merchant and commercial ships</li>
             </ul>
-            <p>Each vessel has different operational requirements. Shipchandler Lome therefore handles every requisition individually rather than relying on a fixed standard package.</p>
-
-            <h2>How to Send an RFQ to Shipchandler Lome</h2>
-            <p>For the fastest quotation, customers should send Shipchandler Lome the complete requisition together with the main vessel and delivery details.</p>
+            <p>Each vessel has different operational requirements. ShipChandler Lome therefore handles every requisition individually rather than relying on a fixed standard package.</p>
+            <h2>How to Send an RFQ to ShipChandler Lome</h2>
+            <p>For the fastest quotation, customers should send ShipChandler Lome the complete requisition together with the main vessel and delivery details.</p>
             <p>Please include:</p>
             <ul>
               <li>Vessel name</li>
@@ -476,11 +505,10 @@
               <li>Maker and model information</li>
               <li>Photographs or drawings for technical items</li>
             </ul>
-            <p>A complete RFQ allows Shipchandler Lome to respond faster and reduces the need for repeated clarification.</p>
-
-            <h2>Why Choose Shipchandler Lome?</h2>
+            <p>A complete RFQ allows ShipChandler Lome to respond faster and reduces the need for repeated clarification.</p>
+            <h2>Why Choose ShipChandler Lome?</h2>
             <p>The role of a ship chandler is not simply to sell products. Successful vessel supply requires procurement, product identification, quality checking, packing, documentation, transportation and coordination with the vessel's limited port schedule.</p>
-            <p>Shipchandler Lome aims to provide:</p>
+            <p>ShipChandler Lome aims to provide:</p>
             <ul>
               <li>Fast response to RFQs</li>
               <li>Competitive quotations</li>
@@ -497,92 +525,126 @@
               <li>Delivery coordination with vessel and agent</li>
               <li>Support for non-standard technical requirements</li>
             </ul>
-            <p>By working with Shipchandler Lome, customers can reduce the number of separate suppliers involved in a port call and coordinate multiple vessel departments through one contact.</p>
-
+            <p>By working with ShipChandler Lome, customers can reduce the number of separate suppliers involved in a port call and coordinate multiple vessel departments through one contact.</p>
             <h2>Quality Control and Order Coordination</h2>
-            <p>Before delivery, Shipchandler Lome aims to check quantities, visible condition, packaging and conformity with the confirmed order. For provisions, attention is given to freshness and shelf life. For technical products, part numbers, sizes and specifications are checked against the information available in the purchase order.</p>
-            <p>If a requested product must be substituted, Shipchandler Lome seeks customer approval whenever practical before dispatch. Clear communication between the supplier, vessel and purchasing department helps prevent unnecessary delays.</p>
-
-            <h2>Long-Term Cooperation with Shipchandler Lome</h2>
-            <p>Shipchandler Lome welcomes cooperation with ship owners, ship management companies, fleet purchasing departments, technical managers, charterers, marine operators and vessel agents.</p>
-            <p>For customers with regular vessel calls, Shipchandler Lome can work with recurring product lists, preferred brands and purchasing procedures. Long-term cooperation helps improve response time and makes future quotations more efficient because the vessel's usual requirements become familiar.</p>
-
-            <h2>Request a Quotation from Shipchandler Lome</h2>
-            <p>Send your complete vessel requisition to Shipchandler Lome for review and quotation. Whether the requirement is a routine provision order, deck and engine stores, urgent spare parts or a combined vessel supply, Shipchandler Lome will evaluate availability and coordinate the order according to the vessel's schedule.</p>
+            <p>Before delivery, ShipChandler Lome aims to check quantities, visible condition, packaging and conformity with the confirmed order. For provisions, attention is given to freshness and shelf life. For technical products, part numbers, sizes and specifications are checked against the information available in the purchase order.</p>
+            <p>If a requested product must be substituted, ShipChandler Lome seeks customer approval whenever practical before dispatch. Clear communication between the supplier, vessel and purchasing department helps prevent unnecessary delays.</p>
+            <h2>Long-Term Cooperation with ShipChandler Lome</h2>
+            <p>ShipChandler Lome welcomes cooperation with ship owners, ship management companies, fleet purchasing departments, technical managers, charterers, marine operators and vessel agents.</p>
+            <p>For customers with regular vessel calls, ShipChandler Lome can work with recurring product lists, preferred brands and purchasing procedures. Long-term cooperation helps improve response time and makes future quotations more efficient because the vessel's usual requirements become familiar.</p>
+            <h2>Request a Quotation from ShipChandler Lome</h2>
+            <p>Send your complete vessel requisition to ShipChandler Lome for review and quotation. Whether the requirement is a routine provision order, deck and engine stores, urgent spare parts or a combined vessel supply, ShipChandler Lome will evaluate availability and coordinate the order according to the vessel's schedule.</p>
             <p>Advance RFQs are recommended whenever possible, particularly for technical equipment, large quantities, bonded stores and non-standard spare parts.</p>
-
-            <h2>Shipchandler Lome â€“ Your Marine Supply Partner</h2>
-            <p>For provisions, bonded stores, deck stores, engine stores, cabin and galley supplies, safety equipment, electrical stores, marine chemicals, tools, workshop consumables, spare parts, publications and technical procurement, contact Shipchandler Lome.</p>
-            <p>Shipchandler Lome is ready to support vessels with professional ship chandling, responsive communication, practical sourcing and coordinated marine supply.</p>
-            <p><strong>Shipchandler Lome â€“ Professional Ship Supply, Marine Stores, Provisions & Technical Procurement.</strong></p>
+            <h2>ShipChandler Lome &ndash; Your Marine Supply Partner</h2>
+            <p>For provisions, bonded stores, deck stores, engine stores, cabin and galley supplies, safety equipment, electrical stores, marine chemicals, tools, workshop consumables, spare parts, publications and technical procurement, contact ShipChandler Lome.</p>
+            <p>ShipChandler Lome is ready to support vessels with professional ship chandling, responsive communication, practical sourcing and coordinated marine supply.</p>
+            <p><strong>ShipChandler Lome &ndash; Professional Ship Supply, Marine Stores, Provisions & Technical Procurement.</strong></p>
 
             <!-- Article CTA -->
             <div class="article-cta">
-              <h3>Need Supply at Shipchandler Lome Port?</h3>
+              <h3>Need Supply at ShipChandler Lome?</h3>
               <p>Send us your complete vessel requisition and our team will respond with a competitive quotation.</p>
               <a href="../request-quote.html" class="btn btn-primary">Request a Quote <i class="fas fa-arrow-right"></i></a>
             </div>
           </article>
         </div>
+
+        <!-- Sticky Sidebar: Quick Actions & Support (No WhatsApp button in aside as requested) -->
+        <aside class="article-sidebar reveal">
+          <div class="sidebar-widget">
+            <span class="sidebar-widget-badge">Direct Port Support</span>
+            <h3>Requisition Assistance</h3>
+            <p>Our marine operations desk coordinates supplies directly with incoming vessel ETAs and dock berthing permits.</p>
+
+            <div class="sidebar-fast-links">
+              <a href="../services.html#provisions" class="sidebar-fast-link">
+                <i class="fa-solid fa-carrot"></i> Fresh Food Provisions
+              </a>
+              <a href="../services.html#bonded" class="sidebar-fast-link">
+                <i class="fa-solid fa-boxes-stacked"></i> Bonded &amp; Duty-Free
+              </a>
+              <a href="../services.html#deck" class="sidebar-fast-link">
+                <i class="fa-solid fa-anchor"></i> Deck Equipment &amp; Ropes
+              </a>
+              <a href="../services.html#engine" class="sidebar-fast-link">
+                <i class="fa-solid fa-gears"></i> Engine Stores &amp; Filters
+              </a>
+              <a href="../services.html#safety" class="sidebar-fast-link">
+                <i class="fa-solid fa-shield-halved"></i> SOLAS Safety Equipment
+              </a>
+            </div>
+
+            <a class="btn btn-primary" style="width: 100%; margin-bottom: 14px;" href="../request-quote.html">
+              Submit Requisition <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </aside>
+
       </div>
     </section>
   </main>
 
-  <!-- FOOTER - MINIMAL & UNIQUE -->
-  <footer class="site-footer">
+  <!-- =========================================
+       SITE FOOTER (Exact 3-Column Ireland Match)
+  ========================================= -->
+  <footer class="site-footer" id="contact">
     <div class="container">
       <div class="footer-top">
+        <!-- Col 1: Brand Info with logo.png -->
         <div class="footer-brand">
-          <a class="logo" href="../index.html">
-            <img src="../assets/imgs/logo.png" alt="Logo" width="36" height="36">
+          <a class="logo" href="../index.html" aria-label="Ship Chandler Ireland home">
+            <img src="../assets/imgs/logo.png" alt="Ship Chandler Ireland Logo" class="site-logo-img" width="44" height="44">
             <span class="logo-text">
-              <strong>ShipChandler</strong>
-              <span>Nigeria</span>
+              <strong>Ship Chandler</strong>
+              <span>Ireland</span>
             </span>
           </a>
-          <p>SHIP CHANDLER NIGERIA CO., LTD is a licensed marine supplier providing provisions, technical
-            stores, bonded goods and emergency vessel supply across all Nigerian ports and anchorages.</p>
+          <p>
+            SHIP CHANDLER IRELAND is a licensed marine supplier providing provisions, technical stores, bonded goods,
+            and emergency vessel supply across commercial ports and anchorages.
+          </p>
         </div>
 
+        <!-- Col 2: Quick Links -->
         <div class="footer-col">
           <h4>Quick Links</h4>
           <ul class="footer-links">
             <li><a href="../index.html">Home</a></li>
             <li><a href="../about.html">About Us</a></li>
-            <li><a href="../services.html">Services</a></li>
-            <li><a href="../contact.html">Contact</a></li>
+            <li><a href="../services.html">Services Catalogue</a></li>
+            <li><a href="../contact.html">Contact Us</a></li>
             <li><a href="../request-quote.html">Request a Quote</a></li>
           </ul>
         </div>
 
-        <div class="footer-col">
-          <h4>Services</h4>
-          <ul class="footer-links">
-            <li><a href="../services.html#provisions">Provisions Supply</a></li>
-            <li><a href="../services.html#bonded">Bonded Stores</a></li>
-            <li><a href="../services.html#deck">Deck Stores</a></li>
-            <li><a href="../services.html#engine">Engine Stores</a></li>
-            <li><a href="../services.html#safety">Safety & PPE</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h4>Contact Us</h4>
+        <!-- Col 3: Direct Contact with Non-Wrapping WhatsApp Button -->
+        <div class="footer-col footer-contact">
+          <h4>Contact Marine Operations</h4>
           <ul class="footer-contact-list">
-            <li><i class="fas fa-map-marker-alt"></i> Lagos Port Complex, Wharf Road, Apapa, Lagos, Nigeria</li>
-            <li><i class="fas fa-envelope"></i> <a href="mailto:sales@shipchandlernigeria.com">sales@shipchandlernigeria.com</a></li>
-            <li><i class="fas fa-user-tie"></i> Ibrahim Adeyemi</li>
             <li>
-              <a class="hero-whatsapp-bar" href="https://wa.me/2482743244" target="_blank" rel="noopener noreferrer"
-                aria-label="Direct WhatsApp contact (+248) 2 743 244">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Port of Dublin, Port Centre, Alexandra Road, Dublin 1, D01 H4C6, Ireland</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope"></i>
+              <a href="mailto:sales@shipchandlerireland.com">sales@shipchandlerireland.com</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-user-tie"></i>
+              <span class="contact-person-badge">Patrick Murphy</span>
+            </li>
+            <li>
+              <!-- WhatsApp Bar with Strict Non-Wrapping Properties -->
+              <a class="hero-whatsapp-bar" href="https://wa.me/6590190005" target="_blank" rel="noopener noreferrer"
+                aria-label="Direct WhatsApp contact (+65-9019-0005)">
                 <span class="hero-whatsapp-icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
                     <path
                       d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
                   </svg>
                 </span>
-                <span class="hero-whatsapp-tag">WhatsApp:</span>
-                <span class="hero-whatsapp-num">(+248) 2 743 244</span>
+                <span class="hero-whatsapp-tag">WHATSAPP:</span>
+                <span class="hero-whatsapp-num">(+65-9019-0005)</span>
                 <span class="hero-whatsapp-arrow" aria-hidden="true">&rarr;</span>
               </a>
             </li>
@@ -591,18 +653,249 @@
       </div>
 
       <div class="footer-bottom">
-        <div>&copy; 2026 SHIP CHANDLER NIGERIA CO., LTD. All rights reserved.</div>
+        <p>&copy; 2026 SHIP CHANDLER IRELAND. All rights reserved.</p>
+        <p>Licensed Port Chandler &amp; Offshore Supply Network</p>
       </div>
     </div>
   </footer>
 
-  <!-- FLOATING WHATSAPP -->
-  <a href="https://wa.me/2482743244" class="whatsapp-float" target="_blank" rel="noopener noreferrer"
-    aria-label="WhatsApp Contact +248 2 743 244">
-    <i class="fab fa-whatsapp"></i>
+  <!-- Floating WhatsApp Button -->
+  <a class="whatsapp-float" href="https://wa.me/6590190005" target="_blank" rel="noopener noreferrer"
+    aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
   </a>
 
-  <script src="../assets/js/port-pages.js"></script>
-</body>
-</html>
+  <!-- =========================================
+       PAGE JAVASCRIPT & INTERACTIONS
+  ========================================= -->
+  <script>
+    const ports = [
+      { name: "Bissau Ship Chandler - Guinea", slug: "bissau-ship-chandler-guinea.html" },
+      { name: "Conakry Ship Chandler", slug: "conakry-ship-chandler.html" },
+      { name: "Dakar Ship Chandler", slug: "dakar-ship-chandler.html" },
+      { name: "Douala Ship Chandler", slug: "douala-ship-chandler.html" },
+      { name: "Ivory Coast Ship Chandler", slug: "ivory-coast-ship-chandler.html" },
+      { name: "Liberia Ship Chandler", slug: "liberia-ship-chandler.html" },
+      { name: "Monrovia Ship Chandler", slug: "monrovia-ship-chandler.html" },
+      { name: "Namibia Ship Chandler", slug: "namibia-ship-chandler.html" },
+      { name: "Nouadhibou Ship Chandler", slug: "nouadhibou-ship-chandler.html" },
+      { name: "San Pedro Ship Supply Chandler", slug: "san-pedro-ship-supply-chandler.html" },
+      { name: "Ship Chandler Abidjan", slug: "ship-chandler-abidjan.html" },
+      { name: "Ship Chandler Angola", slug: "ship-chandler-angola.html" },
+      { name: "Ship Chandler Apapa", slug: "ship-chandler-apapa.html" },
+      { name: "Ship Chandler Beira", slug: "ship-chandler-beira.html" },
+      { name: "Ship Chandler Cabinda", slug: "ship-chandler-cabinda.html" },
+      { name: "Ship Chandler Cape Verde", slug: "ship-chandler-cape-verde.html" },
+      { name: "Ship Chandler Casablanca", slug: "ship-chandler-casablanca.html" },
+      { name: "Ship Chandler Congo", slug: "ship-chandler-congo.html" },
+      { name: "Ship Chandler Cotonou", slug: "ship-chandler-cotonou.html" },
+      { name: "Ship Chandler Dakar", slug: "ship-chandler-dakar.html" },
+      { name: "Ship Chandler Dar Es Salaam", slug: "ship-chandler-dar-es-salaam.html" },
+      { name: "Ship Chandler Djibouti", slug: "ship-chandler-djibouti.html" },
+      { name: "Ship Chandler Freetown", slug: "ship-chandler-freetown.html" },
+      { name: "Ship Chandler Gabon", slug: "ship-chandler-gabon.html" },
+      { name: "Ship Chandler Gentil Port - Gabon", slug: "ship-chandler-gentil-port-gabon.html" },
+      { name: "Ship Chandler Kamsar", slug: "ship-chandler-kamsar.html" },
+      { name: "Ship Chandler Lobito", slug: "ship-chandler-lobito.html" },
+      { name: "Ship Chandler Luanda", slug: "ship-chandler-luanda.html" },
+      { name: "Ship Chandler Maputo", slug: "ship-chandler-maputo.html" },
+      { name: "Ship Chandler Matadi", slug: "ship-chandler-matadi.html" },
+      { name: "Ship Chandler Mindelo", slug: "ship-chandler-mindelo.html" },
+      { name: "Ship Chandler Mombasa", slug: "ship-chandler-mombasa.html" },
+      { name: "Ship Chandler Namibia", slug: "ship-chandler-namibia.html" },
+      { name: "Ship Chandler Onne Port Nigeria", slug: "ship-chandler-onne-port-nigeria.html" },
+      { name: "Ship Chandler Owendo", slug: "ship-chandler-owendo.html" },
+      { name: "Ship Chandler Port Ambon", slug: "ship-chandler-port-ambon.html" },
+      { name: "Ship Chandler Safi Port Morocco", slug: "ship-chandler-safi-port-morocco.html" },
+      { name: "Ship Chandler Senegal", slug: "ship-chandler-senegal.html" },
+      { name: "Ship Chandler Soyo", slug: "ship-chandler-soyo.html" },
+      { name: "Ship Chandler Takoradi", slug: "ship-chandler-takoradi.html" },
+      { name: "Ship Chandler Tema", slug: "ship-chandler-tema.html" },
+      { name: "Ship Chandlers Richards Bay", slug: "ship-chandlers-richards-bay.html" },
+      { name: "Ship Chandlers Saldanha Bay", slug: "ship-chandlers-saldanha-bay.html" },
+      { name: "ShipChandler Lome", slug: "shipchandler-lome.html" },
+      { name: "Shipchandler Lagos", slug: "shipchandler-lagos.html" },
+      { name: "Shipchandler Pointe Noire", slug: "shipchandler-pointe-noire.html" },
+      { name: "Walvis Bay Ship Chandler", slug: "walvis-bay-ship-chandler.html" },
+    ];
 
+    function getPortUrl(portSlug) {
+      return portSlug;
+    }
+
+    // Populate Mega Menu in 3 Groups from Excel Data
+    const megaList = document.getElementById('mega-port-list');
+    if (megaList) {
+      const third = Math.ceil(ports.length / 3);
+      const col1 = ports.slice(0, third);
+      const col2 = ports.slice(third, third * 2);
+      const col3 = ports.slice(third * 2);
+
+      function createPortGroup(title, items) {
+        const group = document.createElement('div');
+        group.className = 'mega-group';
+        group.innerHTML = '<h4>' + title + '</h4>';
+        items.forEach(port => {
+          const a = document.createElement('a');
+          a.href = getPortUrl(port.slug);
+          a.textContent = port.name;
+          a.dataset.port = port.name.toLowerCase();
+          group.appendChild(a);
+        });
+        return group;
+      }
+
+      megaList.appendChild(createPortGroup('Ports & Terminals (A–G)', col1));
+      megaList.appendChild(createPortGroup('Commercial Hubs (L–S)', col2));
+      megaList.appendChild(createPortGroup('Regional Ports (S–W)', col3));
+
+      const searchInput = document.getElementById('mega-port-search');
+      if (searchInput) {
+        searchInput.addEventListener('input', function (e) {
+          const query = e.target.value.trim().toLowerCase();
+          const groups = megaList.querySelectorAll('.mega-group');
+
+          groups.forEach(group => {
+            let hasVisible = false;
+            const links = group.querySelectorAll('a');
+            links.forEach(link => {
+              const matches = link.dataset.port.includes(query);
+              link.style.display = matches ? 'flex' : 'none';
+              if (matches) hasVisible = true;
+            });
+            group.style.display = hasVisible ? 'block' : 'none';
+          });
+        });
+      }
+    }
+
+    // --- Interactive Navigation, Anti-Flicker Dropdowns & Reveal Observers ---
+    document.addEventListener('DOMContentLoaded', () => {
+      const header = document.getElementById('site-header');
+      const nav = document.getElementById('primary-nav');
+      const toggle = document.querySelector('.nav-toggle');
+      const scrim = document.querySelector('.nav-scrim');
+      const dropdownItems = Array.from(document.querySelectorAll('.nav-item.has-dropdown'));
+
+      const closeDropdowns = (except) => {
+        dropdownItems.forEach(item => {
+          if (item !== except) {
+            item.classList.remove('is-open');
+            const trigger = item.querySelector('.dropdown-trigger');
+            if (trigger) trigger.setAttribute('aria-expanded', 'false');
+          }
+        });
+      };
+
+      const closeMobileNav = () => {
+        nav.classList.remove('open');
+        document.body.classList.remove('menu-open');
+        toggle.setAttribute('aria-expanded', 'false');
+        toggle.setAttribute('aria-label', 'Open navigation');
+        toggle.innerHTML = '<i class="fa-solid fa-bars"></i>';
+        scrim.classList.remove('visible');
+        closeDropdowns();
+      };
+
+      toggle.addEventListener('click', () => {
+        const opening = !nav.classList.contains('open');
+        nav.classList.toggle('open', opening);
+        document.body.classList.toggle('menu-open', opening);
+        toggle.setAttribute('aria-expanded', String(opening));
+        toggle.setAttribute('aria-label', opening ? 'Close navigation' : 'Open navigation');
+        toggle.innerHTML = opening ? '<i class="fa-solid fa-xmark"></i>' : '<i class="fa-solid fa-bars"></i>';
+        scrim.classList.toggle('visible', opening);
+        if (!opening) closeDropdowns();
+      });
+
+      scrim.addEventListener('click', closeMobileNav);
+
+      // Desktop Hover + Mobile Click with Anti-Flicker Debounce
+      dropdownItems.forEach(item => {
+        const trigger = item.querySelector('.dropdown-trigger');
+        if (!trigger) return;
+        let closeTimer = null;
+
+        trigger.addEventListener('click', (event) => {
+          if (window.innerWidth <= 900 || trigger.getAttribute('href') === 'javascript:void(0)' || trigger.getAttribute('href') === '#') {
+            event.preventDefault();
+            const opening = !item.classList.contains('is-open');
+            closeDropdowns(item);
+            item.classList.toggle('is-open', opening);
+            trigger.setAttribute('aria-expanded', String(opening));
+          }
+        });
+
+        item.addEventListener('mouseenter', () => {
+          if (window.innerWidth > 900) {
+            if (closeTimer) {
+              clearTimeout(closeTimer);
+              closeTimer = null;
+            }
+            closeDropdowns(item);
+            item.classList.add('is-open');
+            trigger.setAttribute('aria-expanded', 'true');
+          }
+        });
+
+        item.addEventListener('mouseleave', () => {
+          if (window.innerWidth > 900) {
+            closeTimer = setTimeout(() => {
+              item.classList.remove('is-open');
+              trigger.setAttribute('aria-expanded', 'false');
+            }, 180);
+          }
+        });
+      });
+
+      document.addEventListener('click', (event) => {
+        if (window.innerWidth > 900 && !event.target.closest('.nav-item.has-dropdown')) {
+          closeDropdowns();
+        }
+      });
+
+      document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape') {
+          closeDropdowns();
+          if (window.innerWidth <= 900) closeMobileNav();
+        }
+      });
+
+      window.addEventListener('resize', () => {
+        if (window.innerWidth > 900) closeMobileNav();
+      });
+
+      const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 20);
+      onScroll();
+      window.addEventListener('scroll', onScroll, { passive: true });
+
+      // Scroll Reveal Animations
+      const revealElements = document.querySelectorAll('.reveal');
+      if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('active');
+              observer.unobserve(entry.target);
+            }
+          });
+        }, {
+          threshold: 0.08,
+          rootMargin: '0px 0px -30px 0px'
+        });
+
+        revealElements.forEach(el => observer.observe(el));
+      } else {
+        revealElements.forEach(el => el.classList.add('active'));
+      }
+
+      document.querySelectorAll('.nav-list a:not(.dropdown-trigger), .primary-nav > .btn').forEach(link => {
+        link.addEventListener('click', () => {
+          if (window.innerWidth <= 900) closeMobileNav();
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>
